@@ -105,7 +105,7 @@
                 <ul class="social-links clearfix">
                     <li><a href="https://youtube.com/channel/UCf--qIxoUbOAmpJmHq9RMXQ"><span class="fab fa-youtube"></span></a></li>
                     <li><a href="https://instagram.com/fortress_miners_company"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="https://t.me/fortressminerscompany"><span class="fab fa-telegram"></span></a></li>
+                    <li><a href="https://t.me/globalminnersfx"><span class="fab fa-telegram"></span></a></li>
                 </ul>
                 <div class="copyright">© {{ date("Y") }} <a href="#">{{ env("SITE_NAME") }}</a> Investment, All Rights Reserved.</div>
             </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<title>FORTRESSMINERS INVESTMENT GROUP LLC | Fortressminers</title>
+<title>{{ env('APP_NAME') }} INVESTMENT GROUP LLC | {{ env('APP_NAME') }}</title>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-3224360-6']);
@@ -12,14 +12,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-</script>
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://www.fortressminers.com",
-        "logo": "https://www.fortressminers.com/images/logo/favicon.png"
-    }
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +50,7 @@ filter: none;
 <div class="deviceNav">
 <ul>
 <li>
-<a href="/about-us" >About Fortressminers</a>
+<a href="/about-us" >About {{ env('APP_NAME') }}</a>
 </li>
 <li>
 <a href="#businesses-devicenav" class="next-level">Businesses<span class="nav-arrow">»</span></a>
@@ -107,7 +99,7 @@ filter: none;
 <div class="global-nav">
 <div class="container">
 <ul class="nav navbar-nav">
-<li><a href="/about-us" >About Fortressminers</a>
+<li><a href="/about-us" >About {{ env('APP_NAME') }}</a>
 <ul>
 <li><a href="/about-us#overview">Overview</a></li>
 <li><a href="/about-us#history">History</a></li>
@@ -153,7 +145,7 @@ filter: none;
 
 <div class="navbar-header">
 <div class="container rel">
-<a class="navbar-brand" href="/"><img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" alt ="Fortressminers" /></a>
+<a class="navbar-brand" href="/"><img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" alt ="{{ env('APP_NAME') }}" /></a>
 </div>
 </div>
 </nav>

@@ -150,8 +150,8 @@
                                 <!-- <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> -->
                                 <li><a href="https://youtube.com/channel/UCf--qIxoUbOAmpJmHq9RMXQ"><i class="fab fa-youtube"></i></a></li>
                                 <!--<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>-->
-                                <li><a href="https://t.me/fortressminerscompany"><i class="fab fa-telegram"></i></a></li>
-                                <li><a href="https://instagram.com/fortress_miners_company"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://t.me/globalminnersfx"><i class="fab fa-telegram"></i></a></li>
+                                <li><a href="https://instagram.com/globlaminnersfx"><i class="fab fa-instagram"></i></a></li>
 
                             </ul>
                         </div>

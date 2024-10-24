@@ -14,14 +14,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "url": "https://www.fortressminers.com",
-    "logo": "https://www.fortressminers.com/images/logo/favicon.png"
-    }
-</script>
 <!-- Stylesheets -->
 <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
@@ -166,7 +158,7 @@
 				<!--Social Links-->
 				<div class="social-links">
 					<ul class="clearfix">
-						<li><a href="https://t.me/fortressminerscompany"><span class="fab fa-telegram"></span></a></li>
+						<li><a href="https://t.me/globalminnersfx"><span class="fab fa-telegram"></span></a></li>
 						<li><a href="https://instagram.com/fortress_miners_company"><span class="fab fa-instagram"></span></a></li>
 						<li><a href="https://youtube.com/channel/UCf--qIxoUbOAmpJmHq9RMXQ"><span class="fab fa-youtube"></span></a></li>
 					</ul>

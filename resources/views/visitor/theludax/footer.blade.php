@@ -62,10 +62,10 @@
                             <ul class="social-icons">
                                                             <li><a href="https://instagram.com/fortress_miners_company?igshid=YmMyMTA2M2Y=" target="_blank"
                                         title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-                                                            <li><a href="https://www.youtube.com/@fortressminerscompany6009" target="_blank"
+                                                            <li><a href="https://www.youtube.com/@globalminnersfx" target="_blank"
                                         title="Youtbe"><i class="fab fa-youtube"></i></a></li>
                                                             
-                                                            <li><a href="https://T.me/Agentfortressminers" target="_blank"
+                                                            <li><a href="https://T.me/globalminnersfx" target="_blank"
                                         title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
                                                     </ul>
                         </div>

@@ -53,8 +53,8 @@
                         <div class="icon"><img src="assets/images/icons/icon-52.png" alt=""></div>
                         <h4>Mail at</h4>
                         <ul>
-                            <li><a href="mailto:support@fortressminers.com">support@fortressminers.com</a></li>
-                            <li><a href="mailto:career@fortressminers.com">career@fortressminers.com</a></li>
+                            <li><a href="mailto:support@globalminnersfx.com">support@globalminnersfx.com</a></li>
+                            <li><a href="mailto:career@globalminnersfx.com">career@globalminnersfx.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                     <div class="shape-box">
                         <div class="inner-box">
                             <div class="icon"><img src="assets/images/icons/icon-9.png" alt=""></div>
-                            <h4>Become a Partner of Fortressminers</h4>
+                            <h4>Become a Partner of {{ env('APP_NAME') }}</h4>
                             <div class="text">To take a trivial example, which of us undertakes <br>laborious physical exercise.</div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                     <div class="shape-box">
                         <div class="inner-box">
                             <div class="icon"><img src="assets/images/icons/icon-10.png" alt=""></div>
-                            <h4>Career Opportunities in Fortressminers</h4>
+                            <h4>Career Opportunities in {{ env('APP_NAME') }}</h4>
                             <div class="text">Who chooses to enjoy a pleasure that has no one <br>annoying consequences.</div>
                         </div>
                     </div>               

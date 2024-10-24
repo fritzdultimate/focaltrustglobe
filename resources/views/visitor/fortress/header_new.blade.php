@@ -3,7 +3,7 @@
 <div class="deviceNav">
 <ul>
 <li>
-<a href="/about-us" >About Fortressminers</a>
+<a href="/about-us" >About {{ env('APP_NAME') }}</a>
 </li>
 <li>
 <a href="#businesses-devicenav" class="next-level">Businesses<span class="nav-arrow">»</span></a>
@@ -52,7 +52,7 @@
 <div class="global-nav">
 <div class="container">
 <ul class="nav navbar-nav">
-<li><a href="/about-us" >About Fortressminers</a>
+<li><a href="/about-us" >About {{ env('APP_NAME') }}</a>
 <ul>
 <li><a href="/about-us#overview">Overview</a></li>
 <li><a href="/about-us#history">History</a></li>
@@ -98,7 +98,7 @@
 
 <div class="navbar-header">
 <div class="container rel">
-<a class="navbar-brand" href="/"><img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" alt ="Fortressminers" /></a>
+<a class="navbar-brand" href="/"><img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" alt ="{{ env('APP_NAME') }}" /></a>
 </div>
 </div>
 </nav>

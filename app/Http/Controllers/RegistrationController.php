@@ -83,7 +83,7 @@ class RegistrationController extends Controller {
                 'subject' => 'Registration Completed, Welcome',
                 'date' => date("Y-m-d H:i:s"),
                 'site_address' => 'ojokwu kwuru si mugu is migu',
-                'view' => 'emails.user.welcome'
+                'view' => 'emails.user.verification'
             ];
 
             $mailer = new \App\Mail\MailSender($details);
@@ -91,7 +91,7 @@ class RegistrationController extends Controller {
             
              return response()->json(
                 [
-                    'success'=> ['message' => ['Account created successfully, please login.']]
+                    'success'=> ['message' => ['Account created successfully, please check your email inbox or spam folder to verify your account and continue.']]
                 ], 201
             );
             

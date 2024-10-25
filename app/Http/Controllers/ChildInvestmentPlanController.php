@@ -120,7 +120,7 @@ class ChildInvestmentPlanController extends Controller {
     public function update(StoreChildInvestmentPlanRequest $request, ChildInvestmentPlan $plan) {
         $plan->where('id', $request->id)
         ->update([
-            'name' => $request->name,
+            // 'name' => $request->name,
             'minimum_amount' => $request->minimum_amount,
             'maximum_amount' => $request->maximum_amount,
             'interest_rate' => $request->interest_rate,

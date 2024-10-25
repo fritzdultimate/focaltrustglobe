@@ -9,8 +9,6 @@ use App\Models\SiteSettings;
 use App\Models\UserSettings;
 use App\Models\UserWallet;
 use App\Models\Withdrawal;
-use App\Models\ChildInvestmentPlan;
-use App\Models\ParentInvestmentPlan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -31,25 +29,6 @@ class WithdrawalController extends Controller
 
         $hash = generateTransactionHash($withdrawal, 'transaction_hash', 25);
         $wallet_id_is_valid = UserWallet::where('id', $validated['user_wallet_id'])->first();
-        $parent_promo_plan = ParentInvestmentPlan::where('name', 'promo')->first();
-        $promoPlans = ChildInvestmentPlan::where(['parent_investment_plan_id' => $parent_promo_plan->id, 'sent_email' => 0, 'expired' => 0])->first();
-
-
-        if($promoPlans) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ["You cannot make withdrawals while you're on promo"]]
-                ], 400
-            );
-        }
-
-        if(Auth::user()->on_compounding) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ["You cannot make withdrawals while you're on compounding"]]
-                ], 400
-            );
-        }
         
 
         if(!$wallet_id_is_valid) {
@@ -68,20 +47,20 @@ class WithdrawalController extends Controller
             );
         }
         $user_settings = UserSettings::where('user_id', Auth::id())->first();
-       if(!$user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
-                ], 401
-            );
-        }
-       if($validated['pin']  !== $user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Incorrect pin']]
-                ], 401
-            );
-       }
+    //    if(!$user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
+    //             ], 401
+    //         );
+    //     }
+    //    if($validated['pin']  !== $user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Incorrect pin']]
+    //             ], 401
+    //         );
+    //    }
         
         $user = User::find($user_id);
 

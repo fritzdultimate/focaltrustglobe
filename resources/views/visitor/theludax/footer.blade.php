@@ -49,12 +49,12 @@
 
 
                             <a href="/" class="text-center">
-                                <img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" class="logo-max" alt="logo">
+                                <img src="{{ asset('favicon.png') }}" class="logo-max" alt="logo" style="width: 40px; height: 40px">
                             </a>
                             
                         </h5>
                         <p class="title">
-                            <!--<a href="https://T.me/Agentfortressminers">Telegram Live support</a>-->
+                            <!--<a href="https://T.me/Aionprimecorporation">Telegram Live support</a>-->
                         </p>
                         <div class="content">
 
@@ -62,10 +62,10 @@
                             <ul class="social-icons">
                                                             <li><a href="https://instagram.com/fortress_miners_company?igshid=YmMyMTA2M2Y=" target="_blank"
                                         title="Linkedin"><i class="fab fa-instagram"></i></a></li>
-                                                            <li><a href="https://www.youtube.com/@globalminnersfx" target="_blank"
+                                                            <li><a href="https://www.youtube.com/@Aionprimecorporation" target="_blank"
                                         title="Youtbe"><i class="fab fa-youtube"></i></a></li>
                                                             
-                                                            <li><a href="https://T.me/globalminnersfx" target="_blank"
+                                                            <li><a href="https://T.me/Aionprimecorporation" target="_blank"
                                         title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
                                                     </ul>
                         </div>

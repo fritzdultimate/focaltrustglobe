@@ -222,7 +222,7 @@ class UserSettingsController extends Controller {
         } elseif($key == 'front_kyc') {
             $message = 'You successfully uploaded the front of your ID card, please make sure the back is uploaded as well';
         } else {
-            $message = 'You successfully uploaded trading document, sit back while we review it.';
+            $message = 'You successfully uploaded your address proof, sit back while we review it.';
         }
         if($former_url) {
             unlink($former_url);

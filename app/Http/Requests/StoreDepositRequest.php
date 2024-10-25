@@ -35,7 +35,7 @@ class StoreDepositRequest extends FormRequest {
         'child_plan_id' => 'required', 
         'amount' => 'required',
         'user_wallet_id' => 'required',
-        'pin' => 'required|numeric|digits:4'
+        // 'pin' => 'required|numeric|digits:4'
         ];
     }
 
@@ -50,7 +50,7 @@ class StoreDepositRequest extends FormRequest {
             'child_plan_id.required' => 'Please choose a plan for this transaction',
             'amount.required' => 'Invalid amount',
             'user_wallet_id.required' => 'Please select wallet for this transaction',
-            'pin.required' => 'Please enter your 4 digits pin'
+            // 'pin.required' => 'Please enter your 4 digits pin'
         ];
     }
 

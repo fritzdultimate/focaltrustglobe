@@ -16,7 +16,7 @@
                                     <label class="label">Referral Code</label>
                                     <div class="input-group mb-2">
                                         <input type="text" class="form-control" placeholder=""
-                                            value="{{ 'https://fortressminers.com/register?ref=' .  $user->name}}" id="accountNumberInput">
+                                            value="{{ 'https://aionprimecorporation.com/register?ref=' .  $user->name}}" id="accountNumberInput">
                                     </div>
                                 </div>
 
@@ -79,14 +79,6 @@
                                         <span class="input-group-text" id="basic-addonb1">{{ get_currency_symbol($user_settings->currency) }}</span>
                                         <input type="text" class="form-control" placeholder="Enter an amount" name="amount">
                                     </div>
-
-                                    <div class="form-group basic">
-                                    <label class="label">Transaction Pin <small style="font-size: 6px;">(4 digits)</small></label>
-                                    <div class="input-group mb-2">
-                                        <input type="number" class="form-control"
-                                         name="pin">
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="form-group basic">
@@ -172,13 +164,7 @@
                                          name="note">
                                     </div>
                                 </div>
-                                <div class="form-group basic">
-                                    <label class="label">Transaction Pin</label>
-                                    <div class="input-group mb-2">
-                                        <input type="number" class="form-control"
-                                         name="pin">
-                                    </div>
-                                </div>
+                                
 
                                 <div class="form-group basic">
                                     <button type="submit" class="btn btn-primary btn-block btn-lg send-btn form-button withdrawal-btn"
@@ -238,14 +224,6 @@
                                         <span class="input-group-text" id="basic-addonb1">{{ get_currency_symbol($user_settings->currency) }}</span>
                                         <input type="text" class="form-control" placeholder="Enter an amount" name="amount">
                                     </div>
-
-                                    <div class="form-group basic">
-                                    <label class="label">Transaction Pin <small style="font-size: 6px;">(4 digits)</small></label>
-                                    <div class="input-group mb-2">
-                                        <input type="number" class="form-control"
-                                         name="pin">
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="form-group basic">
@@ -312,14 +290,6 @@
                                         <span class="input-group-text" id="basic-addonb1">{{ get_currency_symbol($user_settings->currency) }}</span>
                                         <input type="text" class="form-control" placeholder="Enter an amount" name="amount">
                                     </div>
-
-                                    <div class="form-group basic">
-                                    <label class="label">Transaction Pin <small style="font-size: 6px;">(4 digits)</small></label>
-                                    <div class="input-group mb-2">
-                                        <input type="number" class="form-control"
-                                         name="pin">
-                                    </div>
-                                </div>
                                 </div>
 
                                 <div class="form-group basic">

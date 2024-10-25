@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ env('APP_NAME') }} | Keeping money safe</title>
+    <title>Aionprimecorporation | Keeping money safe</title>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-3224360-6']);
@@ -12,8 +12,137 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.Aionprimecorporation.com",
+        "logo": "https://Aionprimecorporation.com/images/Fortress_Logo_PMS_542_6in.png"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "image": [
+          "https://Aionprimecorporation.com/visitors1/img/banner.jpg",
+          "https://Aionprimecorporation.com/visitors1/img/mockup.png",
+          "https://Aionprimecorporation.com/images/Fortress_Logo_PMS_542_6in.png"
+        ],
+        "name": "Aionprimecorporation | Best Investment Platform!",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "535 Madison Ave #15th, New York, NY 10022, United States.",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10022",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.7128,
+          "longitude": 74.0060
+        },
+        "url": "https://www.example.com/store-locator/sl/San-Jose-Westgate-Store/1427",
+        "priceRange": "$100",
+        "telephone": "{{ env('SITE_NUMBER') }}",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "23:59"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "08:00",
+            "closes": "23:00"
+          }
+        ],
+        "department": [
+          {
+            "@type": "Investment",
+            "image": [
+          "https://Aionprimecorporation.com/images/Fortress_Logo_PMS_542_6in.png"
+        ],
+            "name": "Aionprimecorporation's Investment",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "535 Madison Ave #15th, New York, NY 10022, United States.",
+              "addressLocality": "New York",
+              "addressRegion": "NY",
+              "postalCode": "10022",
+              "addressCountry": "US"
+            },
+            "priceRange": "$100",
+            "telephone": "{{ env('SITE_NUMBER') }}",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "17:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "11:00",
+                "closes": "17:00"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+
+          @foreach($faqs as $faq)
+          {
+          "@type": "Question",
+          "name": "{{ $faq->question }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":"{{ $faq->answer }}"
+          }
+          },
+          @endforeach
+          {
+          "@type": "Question",
+          "name": "Will I be charged for depositing money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":"Charges will not be collected if you are making deposits to Aionprimecorporation platform: <ul><li>Web</li><li>App</li><li>Desktop</li></ul>"}
+          }
+      ]
+    }
+    </script>
     
-    <meta name="description" content="Globalminnersfx deals on investment on crytocurrency, and stocks, investing with {{ env('APP_NAME') }} gives you the chance to leverage on their large market data and increase your chances of attaining high financial breakthrough.">
+    <meta name="description" content="Fortress miners deals on investment on crytocurrency, and stocks, investing with Aionprimecorporation gives you the chance to leverage on their large market data and increase your chances of attaining high financial breakthrough.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +155,10 @@
     <meta name="theme-color" content="#dab779">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="{{ env('APP_NAME') }} | Keeping money safe">
+    <meta property="og:title" content="Aionprimecorporation | Keeping money safe">
     <meta property="og:site_name" content="Keeping money safe">
-    <meta property="og:url" content="globalminnersfx.com/">
-    <meta property="og:description" content="Globalminnersfx deals on investment on crytocurrency, and stocks, investing with {{ env('APP_NAME') }} gives you the chance to leverage on their large market data and increase your chances of attaining high financial breakthrough.">
+    <meta property="og:url" content="Aionprimecorporation.com/">
+    <meta property="og:description" content="Fortress miners deals on investment on crytocurrency, and stocks, investing with Aionprimecorporation gives you the chance to leverage on their large market data and increase your chances of attaining high financial breakthrough.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ asset('visitors1/img/banner.jpg') }}">
     

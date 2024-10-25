@@ -15,7 +15,7 @@
                     </div>
                     <div class="row p-0 m-0">
                         <div class="col-12 p-0 d-flex justify-content-center">
-                            <div class="copyright-text copyright-text-s2">  Copyright © 2019 <a href="/">{{ request()->getHttpHost() }}</a> </div>
+                            <div class="copyright-text copyright-text-s2">  Copyright © 2019 - {{ date('Y') }}<a href="/">{{ request()->getHttpHost() }}</a> </div>
                         </div>
                     </div>
                 </div>

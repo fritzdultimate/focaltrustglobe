@@ -12,22 +12,30 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.Aionprimecorporation.com",
+            "logo": "https://www.Aionprimecorporation.com/images/logo/favicon.png"
+            }
+        </script>
         <meta charset="utf-8" />
-        <meta name="author" content="{{ env('APP_NAME') }}" />
+        <meta name="author" content="Aionprimecorporation" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="title" content="{{ env('APP_NAME') }} is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
+        <meta name="title" content="Aionprimecorporation is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
         <meta name="description" content="We engage in best practice to provide our users/investors platform to perform their investment, we have highly trained professionals which are available on demand, to guide investors on best practices.">
         <meta name="keywords" content="investment, legit, trading, secured, cryptocurrency, bitcoin, ethereum">
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ Request::getSchemeAndHttpHost() }}">
-        <meta property="og:title" content="{{ env('APP_NAME') }} is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
+        <meta property="og:title" content="Aionprimecorporation is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
         <meta property="og:description" content="We engage in best practice to provide our users/investors platform to perform their investment, we have highly trained professionals which are available on demand, to guide investors on best practices.">
-        <meta property="og:image" content="https://www.globalminnersfx.com/visitors1/img/banner.jpg">
-        <meta property="twitter:card" content="https://www.globalminnersfx.com/visitors1/img/banner.jpg">
+        <meta property="og:image" content="https://www.Aionprimecorporation.com/visitors1/img/banner.jpg">
+        <meta property="twitter:card" content="https://www.Aionprimecorporation.com/visitors1/img/banner.jpg">
         <meta property="twitter:url" content="{{ Request::getSchemeAndHttpHost() }}">
-        <meta property="twitter:title" content="{{ env('APP_NAME') }} is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
+        <meta property="twitter:title" content="Aionprimecorporation is all about trading, investment, mining, and lending. the company specialises in crypto trading, investment and mining in which they train professional traders and make them experts who trades with the help of a api trading robot to yield and mine huge profits for investors.">
         <meta property="twitter:description" content="We engage in best practice to provide our users/investors platform to perform their investment, we have highly trained professionals which are available on demand, to guide investors on best practices.">
-        <meta property="twitter:image" content="https://www.globalminnersfx.com/visitors1/img/banner.jpg">
+        <meta property="twitter:image" content="https://www.Aionprimecorporation.com/visitors1/img/banner.jpg">
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="English">

@@ -34,7 +34,8 @@ class RegistrationController extends Controller {
             'middlename' => $request->middlename,
             'password' => Hash::make($validated['password']),
             'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s')
+            'updated_at' => date('Y-m-d H:i:s'),
+            'email_verified_at' => date('Y-m-d H:i:s')
         ];
 
         if($has_referral && $referrer) {
@@ -79,10 +80,10 @@ class RegistrationController extends Controller {
                 'username' => $validated['username'],
                 'email' => $validated['email'],
                 'token' => $token,
-                'subject' => 'Registration Completed, Waiting Verification',
+                'subject' => 'Registration Completed, Welcome',
                 'date' => date("Y-m-d H:i:s"),
                 'site_address' => 'ojokwu kwuru si mugu is migu',
-                'view' => 'emails.user.verification'
+                'view' => 'emails.user.welcome'
             ];
 
             $mailer = new \App\Mail\MailSender($details);
@@ -90,7 +91,7 @@ class RegistrationController extends Controller {
             
              return response()->json(
                 [
-                    'success'=> ['message' => ['Account created successfully, please check the mail sent to the provided email address for verification, note that link expires in one hour time.']]
+                    'success'=> ['message' => ['Account created successfully, please login.']]
                 ], 201
             );
             

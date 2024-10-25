@@ -29,7 +29,7 @@ class StoreUserWalletRequest extends FormRequest
             // 'main_wallet_id' => 'required|unique:user_wallets,main_wallet_id,except,id',
             'currency_address' => 'required',
             'memo_token' => 'required_if:has_memo,true',
-            'pin' => 'required|numeric|digits:4'
+            // 'pin' => 'required|numeric|digits:4'
         ];
     }
 
@@ -39,7 +39,7 @@ class StoreUserWalletRequest extends FormRequest
             // 'main_wallet_id.unique' => 'Address has already been created for this wallet',
             'currency_address.required' => 'Address is required for this wallet',
             'memo_token.required_if' => 'Memo is required for this wallet',
-            'pin.required' => 'Please enter your 4 digits pin'
+            // 'pin.required' => 'Please enter your 4 digits pin'
         ];
     }
 }

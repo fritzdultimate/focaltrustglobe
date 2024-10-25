@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>{{ env('APP_NAME') }} | Frequently Asked Questions</title>
+<title>Aionprimecorporation | Frequently Asked Questions</title>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-3224360-6']);
@@ -14,6 +14,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.Aionprimecorporation.com",
+    "logo": "https://www.Aionprimecorporation.com/images/logo/favicon.png"
+    }
+</script>
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -35,7 +43,7 @@
           "name": "Will I be charged for depositing money?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text":"Charges will not be collected if you are making deposits to {{ env('APP_NAME') }} platform: <ul><li>Web</li><li>App</li><li>Desktop</li></ul>"}
+            "text":"Charges will not be collected if you are making deposits to Aionprimecorporation platform: <ul><li>Web</li><li>App</li><li>Desktop</li></ul>"}
           }
       ]
     }

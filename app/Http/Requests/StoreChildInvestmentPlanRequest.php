@@ -26,7 +26,7 @@ class StoreChildInvestmentPlanRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:child_investment_plans,name,except,id',
+            // 'name' => 'required|unique:child_investment_plans,name,except,id',
             'minimum_amount' => 'required|lt:maximum_amount',
             'maximum_amount' => 'required|gt:minimum_amount',
             'interest_rate' => 'required|numeric',

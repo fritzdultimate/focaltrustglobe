@@ -25,20 +25,20 @@ class UserWalletController extends Controller {
         }
 
         $user_settings = UserSettings::where('user_id', Auth::id())->first();
-       if(!$user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
-                ], 401
-            );
-        }
-       if($validated['pin']  !== $user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Incorrect pin']]
-                ], 401
-            );
-       }
+    //    if(!$user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
+    //             ], 401
+    //         );
+    //     }
+    //    if($validated['pin']  !== $user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Incorrect pin']]
+    //             ], 401
+    //         );
+    //    }
 
         $userWallet->currency_address = $request->currency_address;
         $userWallet->main_wallet_id = $request->main_wallet_id;

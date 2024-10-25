@@ -178,7 +178,7 @@ class HomeController extends Controller {
         $deposits = Deposit::where('status', 'accepted')->orderBy('created_at','desc')->take(15)->get();
         $withdrawals = Withdrawal::where('status', 'accepted')->orderBy('created_at','desc')->take(15)->get();
         $fake_withdrawals = FakeWithdrawal::orderBy('created_at','desc')->take(15)->get();
-        return view('visitor.theludax', compact('page_title', 'fake_withdrawals', 'deposits', 'withdrawals', 'plans', 'parent_plans', 'faqs', 'settings', 'reviews', 'main_wallets'));
+        return view('visitor.index', compact('page_title', 'fake_withdrawals', 'deposits', 'withdrawals', 'plans', 'parent_plans', 'faqs', 'settings', 'reviews', 'main_wallets'));
     }
     
     public function index2(Request $request){
@@ -238,7 +238,7 @@ class HomeController extends Controller {
         
         $c = ParentInvestmentPlan::where('name', 'crypto')->first();
         $plans = ChildInvestmentPlan::where('parent_investment_plan_id', $c->id)->get();
-        UserSettings::insert(['user_id' => Auth::id()]);
+        // UserSettings::insert(['user_id' => Auth::id()]);
         $page_title = env('SITE_NAME') . " Investment Website | Dashboard";
         $mode = 'dark';
         $user = Auth::user();

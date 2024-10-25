@@ -293,11 +293,11 @@ time_is_widget.init({United_Kingdom_z716:{template:"DATE TIME", date_format:"day
 
                                 	<h2>Welcome to</h2>
 
-                                    <h2>HedgeMiners</h2>
+                                    <h2>Aionprimecorporation</h2>
 
                                     <p>We look forward to doing business with you and helping you
 to achieve your financial goals</p>
-									<p>HedgeMiners is registered in the United Kingdom</p>
+									<p>Aionprimecorporation is registered in the United Kingdom</p>
                                     <p>Our company was formed to utilize advanced cloud mining technology to mine for Cryptocurrencies , trading in stocks and forex.</p>
                                     <p>Become a member of our site to start growing your capital !</p>
 
@@ -501,15 +501,15 @@ crypt_single_base_currency = "Bitcoincash (BCH)";crypt_single_target_currency = 
 
             	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-                	<div class="about-head">About HedgeMiners</div>
+                	<div class="about-head">About Aionprimecorporation</div>
 
                     <div class="about-text">
 
                     <!--	<h2>We offer our clients excellent investment offerings</h2>-->
 
-                        <p>HedgeMiners is a legally registered Private Limited Company which was founded at 2017 in United Kingdom. and transformed into an open joint-stock company in order to provide access for everyone to financial products offered by HedgeMiners. The investment management potential created by the professionals working with the Company had been the underlying reason of the transformation.</p>
+                        <p>Aionprimecorporation is a legally registered Private Limited Company which was founded at 2017 in United Kingdom. and transformed into an open joint-stock company in order to provide access for everyone to financial products offered by Aionprimecorporation. The investment management potential created by the professionals working with the Company had been the underlying reason of the transformation.</p>
 
-                        <p>Since HedgeMiners has demonstrated outstanding performance and significantly expanded its assets in the previous period, the decision was made to start offering its investment products via specialized online services.</p>
+                        <p>Since Aionprimecorporation has demonstrated outstanding performance and significantly expanded its assets in the previous period, the decision was made to start offering its investment products via specialized online services.</p>
             
 						<p>The Company is not a member, associate or subdivision of any other organization, so it is free to make totally independent decisions. Our team of full-time financial experts ensures effective and quick analysis of the current financial situation. Our mission is to provide every person the opportunity to gain maximal profit from investing at minimal risk.</p>
                     </div>
@@ -569,7 +569,7 @@ crypt_single_base_currency = "Bitcoincash (BCH)";crypt_single_target_currency = 
 
                 	<div class="plan-head">our investment plans</div>
 					<div class="owl-carousel owl-theme">
-					    @foreach($child_plans as $id => $c_plan)
+					    @foreach($plans as $id => $c_plan)
             				<div class="item">
                                     <div class="plan1"><!---plan 1-->
                 
@@ -885,7 +885,7 @@ crypt_single_base_currency = "Bitcoincash (BCH)";crypt_single_target_currency = 
 
             	
 
-                	<div class="adv-head">HedgeMiners features</div>
+                	<div class="adv-head">Aionprimecorporation features</div>
 
                    
 
@@ -941,7 +941,7 @@ crypt_single_base_currency = "Bitcoincash (BCH)";crypt_single_target_currency = 
 
                                         <span></span>
 
-                                        <p>Our company is legally registered in the United Kingdom as “HedgeMiners" .</p>
+                                        <p>Our company is legally registered in the United Kingdom as “Aionprimecorporation" .</p>
 
                                     </div>
 
@@ -1634,16 +1634,16 @@ autoplay:true,
     	<div class="row">
         	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             	<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                	<div class="foot-head"><p>HedgeMiners Links</p></div>
+                	<div class="foot-head"><p>Aionprimecorporation Links</p></div>
                 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     	
                              <div class="footmenu">
                                 <ul>
                                     <li><span><img src="fx/images/di.png" /></span>
-                                         <a href="indexbc14.html?a=home">Home</a>
+                                         <a href="/">Home</a>
                                      </li>
                                      <li><span><img src="fx/images/di.png" /></span>
-                                         <a href="/services">Terms and Conditions</a>
+                                         <a href="/terms">Terms and Conditions</a>
                                      </li>
                                      <li><span><img src="fx/images/di.png" /></span>
                                          <a href="/about-us">About Us</a>
@@ -1672,7 +1672,7 @@ autoplay:true,
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                		<div class="foot-head"><p>HedgeMiners  Contacts</p></div>
+                		<div class="foot-head"><p>Aionprimecorporation  Contacts</p></div>
                     			<div class="foot-textcommon">
                     				<div class="foot-text">
                                                   </div>
@@ -1682,7 +1682,7 @@ autoplay:true,
                                     </div>
                                     <div class="foot-text">
                                        <img src="fx/images/add3.png" class="heartbeat">
-                                        <p>Email-ID:<span>support@hedgeminers.com</span></p>
+                                        <p>Email-ID:<span>support@Aionprimecorporation.com</span></p>
                                     </div>
                                     <div class="foot-text">
                                        <img src="fx/images/add4.png" class="heartbeat">
@@ -1700,7 +1700,7 @@ autoplay:true,
                     		</div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                        	<div class="copy">2017 © HedgeMiners .All Rights Reserved</div>
+                        	<div class="copy">2017 - {{ date('Y') }} © Aionprimecorporation .All Rights Reserved</div>
                         </div>
                     </div>
         </div>

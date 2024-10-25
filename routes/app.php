@@ -222,8 +222,6 @@ Route::get('/fkbnm/fjfkkcixmzifk/ddjdmccdk/plan/khfddhf/tokens/dfhgdfj/delete', 
 Route::get('/fkbnm/fjfkkcixmzifk/ddjdmccdk/plan/khfddhf/userdata/dfhgdfj/reset-deposit-and-withdrawal-limit', [App\Http\Controllers\ProfitCronJobController::class, 'clearDepositAndWithdrawalLimit']);
 
 Route::get('/fkbnm/fjfkkcixmzifk/ddjdmccdk/plan/khfddhf/userdata/dfhgdfj/reset-admin-auth', [App\Http\Controllers\ProfitCronJobController::class, 'resetAdminAuthentication']);
-
-Route::get('/fkbnm/fjfkkcixmzifk/ddjdmccdk/plan/khfddhf/compound', [App\Http\Controllers\ProfitCronJobController::class, 'addCompounding']);
 // ProfitCronJob::Router ends here 
 
 // User::Route starts here
@@ -267,9 +265,6 @@ Route::post('/setting/toggleMode', [App\Http\Controllers\UserSettingsController:
      Route::post('/setting/card/edit', [App\Http\Controllers\UserSettingsController::class, 'editCard']);
 
      Route::post('/admin/promote/user/{id}', [App\Http\Controllers\AdminController::class, 'togglePromo']);
-     Route::post('/admin/compound/user/{id}', [App\Http\Controllers\AdminController::class, 'toggleCompound']);
-     Route::post('/admin/compound/duration/user/{id}', [App\Http\Controllers\AdminController::class, 'compoundDuration']);
-     Route::post('/admin/compound/amount/user/{id}', [App\Http\Controllers\AdminController::class, 'compoundAmount']);
      Route::post('/admin/suspend/user/{id}', [App\Http\Controllers\AdminController::class, 'togglesuspend']);
 
      Route::post('/admin/set/userpassword', [App\Http\Controllers\AdminController::class, 'setUserPassword']);

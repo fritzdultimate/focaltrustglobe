@@ -136,9 +136,6 @@
                                     <th class="text-center">Created</th>
                                     <th class="text-center">Suspended</th>
                                     <th class="text-center">On promo</th>
-                                    <th class="text-center">On Compounding</th>
-                                    <th class="text-center">Compounding Duration</th>
-                                    <th class="text-center">Compounding Amount</th>
                                     <th class="text-center">Admin</th>
                                     <th class="text-center">Verified Email</th>
                                     <th class="text-center">action</th>
@@ -174,22 +171,6 @@
                                         <label class="custom-switch">      
                                             <input type="checkbox"  class="custom-switch-input switch-promote d-none" data-id="{{ $user->id }}" {{ $user->on_promo ? 'checked' : '' }}>
                                             <span class="custom-switch-indicator"></span>
-                                        </label>
-                                    </td>
-                                    <td class="text-center w-5p">
-                                        <label class="custom-switch">      
-                                            <input type="checkbox"  class="custom-switch-input switch-compound d-none" data-id="{{ $user->id }}" {{ $user->on_compounding ? 'checked' : '' }}>
-                                            <span class="custom-switch-indicator"></span>
-                                        </label>
-                                    </td>
-                                    <td class="text-center w-5p">
-                                        <label class="">      
-                                            <input type="number"  class="choose-duration" data-id="{{ $user->id }}" value="{{ $user->compounding_duration }}">
-                                        </label>
-                                    </td>
-                                    <td class="text-center w-5p">
-                                        <label class="">      
-                                            <input type="number"  class="choose-amount" data-id="{{ $user->id }}" value="{{ $user->compounding_amount }}">
                                         </label>
                                     </td>
                                     <td class="text-center w-5p">
@@ -274,7 +255,7 @@
 
 @include('protected.admin.layouts.footer')
 <script src="{{ asset('dash/js/fns.js?ref=16') }}"></script>
-<script src="{{ asset('dash/js/v2.members.js?ref=93') }}"></script>
+<script src="{{ asset('dash/js/v2.members.js?ref=9') }}"></script>
 @include('protected.admin.layouts.send-users-email')
 @include('protected.admin.layouts.add-funds')
 @include('protected.admin.layouts.set-user-password')
@@ -406,6 +387,7 @@
                 e.preventDefault();
             let form = document.querySelector('.send-user-email-form');
             let edited = document.querySelector('.tox-edit-area');
+            getIframeContent();
             // return;
             fetch(urlPrefix + `admin/newsletter`, {
             method : 'post',
@@ -413,7 +395,7 @@
             body : JSON.stringify({
                 email: form.elements.namedItem('email').value,
                 subject: form.elements.namedItem('subject').value,
-                message: form.elements.namedItem('message').value
+                message: getIframeContent()
             })
             }).then((res) => {
                 hideLoading();

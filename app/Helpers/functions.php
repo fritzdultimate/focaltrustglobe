@@ -90,9 +90,9 @@ function returnKycMessages($amount, $action = 'deposit') {
         }
     } elseif($action == 'withdrawal') {
         if($amount > $admin_settings->withdrawal_limit_level_1 && $user_settings->current_kyc_leve == 'tier 1') {
-            return "You need to upgrade your account for higher withdrawal requests limit!";
+            return "You can only make withdrawal requests not greater than " . returnCurrencyLocale($user_settings->currency, $admin_settings->withdrawal_limit_level_1) . " at once, upgrade your account for higher withdrawal requests limit!";
        } elseif($amount > $admin_settings->withdrawal_limit_level_2 && $user_settings->current_kyc_leve == 'tier 2') {
-            return "You need to upgrade your account for higher withdrawal requests limit!";
+            return "You can only make withdrawal requests not greater than " . returnCurrencyLocale($user_settings->currency, $admin_settings->withdrawal_limit_level_2) . " at once, upgrade your account for higher withdrawal requests limit!";
         } elseif (($user->today_withdrawals == $admin_settings->daily_withdrawal_limit_level_1 || $amount + $user->today_withdrawals > $admin_settings->daily_withdrawal_limit_level_1) && $user_settings->current_kyc_leve == 'tier 1') {
             return 'Daily withdrawal request limit exeeded, upgrade account for higher limit!';
         }
@@ -101,17 +101,17 @@ function returnKycMessages($amount, $action = 'deposit') {
             return 'Daily withdrawal request limit exeeded, upgrade your account for higher limit!';
         }
     } elseif($action == 'reinvest') {
-        $count_reinvestment = Deposit::where([
-            'user_id' => Auth::id(),
-            'reinvestment' => 1
-        ])->count();
-        if($user_settings->current_kyc_leve == 'tier 1') {
-            return 'Upgrade your account to be able to reinvest!';
-        } elseif($count_reinvestment >= $admin_settings->count_reinvestment_level_2) {
-            return 'You have exceeded your reinvestment limit, upgrade account to enjoy higher limit';
-        } elseif($count_reinvestment >= $admin_settings->count_reinvestment_level_3) {
-            return 'You have exceeded your account reinvestment limit.';
-        }
+        // $count_reinvestment = Deposit::where([
+        //     'user_id' => Auth::id(),
+        //     'reinvestment' => 1
+        // ])->count();
+        // if($user_settings->current_kyc_leve == 'tier 1') {
+        //     return 'Upgrade your account to be able to reinvest!';
+        // } elseif($count_reinvestment >= $admin_settings->count_reinvestment_level_2) {
+        //     return 'You have exceeded your reinvestment limit, upgrade account to enjoy higher limit';
+        // } elseif($count_reinvestment >= $admin_settings->count_reinvestment_level_3) {
+        //     return 'You have exceeded your account reinvestment limit.';
+        // }
     }
     
 }

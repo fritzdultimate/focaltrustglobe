@@ -105,14 +105,14 @@
                                                 <i class="fe fe-more-vertical"></i>
                                             </a>
                                             <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(9px, 16px, 0px); top: 0px; left: 0px; will-change: transform;" x-out-of-boundaries="">
-                                                <a href="#" class="dropdown-item ajaxModal" data-confirm_ms="">
+                                                <a href="#" class="dropdown-item edit-plan" data-min="{{ $plan->minimum_amount }}" data-max="{{ $plan->maximum_amount }}" data-duration="{{ number_format($plan->duration) }}" data-interest="{{ number_format($plan->interest_rate) }}" data-date="{{ $plan->exp_date }}" data-name="{{ ucfirst($plan->name) }}" data-bonus="{{ number_format($plan->referral_bonus) }}" data-id="{{ $plan->id }}">
                                                     <i class="dropdown-icon fe fe-edit"></i> 
                                                     Edit
                                                 </a>
-                                                <a href="#" class="dropdown-item ajaxDeleteItem" data-confirm_ms="Are you sure you want to delete this item">
+                                                {{-- <a href="#" class="dropdown-item ajaxDeleteItem" data-confirm_ms="Are you sure you want to delete this item">
                                                     <i class="dropdown-icon fe fe-trash-2"></i> 
                                                     Delete
-                                                </a>
+                                                </a> --}}
                                             </div>
                                         </div>
                                     </td>
@@ -197,6 +197,65 @@
     </div>
 </div>
 
+<div id="modal-ajax-edit" class="modal fade" tabindex="-1">
+    <div id="main-modal-content">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                
+                <form class="edit-child-plan-form">
+                    <input id="id" type="hidden" name="id" value="" class="form-control">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Plan Name</label>
+                                    <input readonly id="name" type="text" name="name" value="" class="form-control">
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Minimum amount</label>
+                                    <input id="min" type="text" name="minimum_amount" value="" class="form-control">
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Maximum amount</label>
+                                    <input id="max" type="text" name="maximum_amount" value="" class="form-control">
+                                </div>
+                            </div> 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Interest rate (%)</label>
+                                    <input id="interest" type="text" name="interest_rate" value="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Duration (days)</label>
+                                    <input id="duration" type="text" name="duration" value="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <label>Referral bonus (%)</label>
+                                    <input id='bonus' type="text" name="referral_bonus" value="" class="form-control">
+                                </div>
+                            </div>   
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-min-width mr-1 mb-1 edit-child-plan">Edit</button>
+                        <button type="button" class="btn btn-dark dismiss-modal" data-dismiss="modal">Close</button>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </div>
+</div>
+
 
 @include('protected.admin.layouts.footer')
 <script src="{{ asset('dash/js/fns.js?ref=16') }}"></script>
@@ -218,8 +277,29 @@ let headers = {
     let btns = document.querySelectorAll('.dismiss-modal');
     [...btns].forEach(el => {
         el.addEventListener('click', () => {
-            document.querySelector('#modal-ajax').style.display = 'none';
-            document.querySelector('#modal-ajax').classList.remove('show');
+            if(document.querySelector('#modal-ajax').style.display == 'block') {
+                document.querySelector('#modal-ajax').style.display = 'none';
+                document.querySelector('#modal-ajax').classList.remove('show');
+            } else {
+                document.querySelector('#modal-ajax-edit').style.display = 'none';
+                document.querySelector('#modal-ajax-edit').classList.remove('show');
+            }
+        });
+    });
+
+    [...document.querySelectorAll('.edit-plan')].forEach(el => {
+        el.addEventListener('click', (e) => {
+            document.querySelector('#modal-ajax-edit').style.display = 'block';
+            document.querySelector('#modal-ajax-edit').classList.add('show');
+
+            // alert(e.currentTarget.dataset.name)
+            document.querySelector('#name').value = e.currentTarget.dataset.name;
+            document.querySelector('#min').value = e.currentTarget.dataset.min;
+            document.querySelector('#max').value = e.currentTarget.dataset.max;
+            document.querySelector('#duration').value = e.currentTarget.dataset.duration;
+            document.querySelector('#interest').value = e.currentTarget.dataset.interest;
+            document.querySelector('#bonus').value = e.currentTarget.dataset.bonus;
+            document.querySelector('#id').value = e.currentTarget.dataset.id;
         })
     })
 
@@ -233,33 +313,73 @@ let headers = {
         body : JSON.stringify({
             ...jsonFormData(form)
         })
-    }).then((res) => {
-        hideLoading();
-        return res.json();
-        // return res.text();
-    })
-    .then((data) => {
-        console.log(data);
-        if('errors' in data){
-            let errorMsg = getResponse(data);
-            // showErrorModal(errorMsg, ['addCardActionSheet']);
-            console.log(errorMsg);
-        }
-        else if('success' in data){
-            let successMsg = getResponse(data, 'success');
-            // showSuccessModal(successMsg, ['addCardActionSheet'])
-            console.log(successMsg)
-            setTimeout(() => {
-                location.reload();
-            }, 2000)
-        } else {
+        }).then((res) => {
+            hideLoading();
+            return res.json();
+            // return res.text();
+        })
+        .then((data) => {
+            console.log(data);
+            if('errors' in data){
+                let errorMsg = getResponse(data);
+                // showErrorModal(errorMsg, ['addCardActionSheet']);
+                console.log(errorMsg);
+            }
+            else if('success' in data){
+                let successMsg = getResponse(data, 'success');
+                // showSuccessModal(successMsg, ['addCardActionSheet'])
+                console.log(successMsg)
+                setTimeout(() => {
+                    location.reload();
+                }, 2000)
+            } else {
+                // hideLoading();
+                // showErrorModal(catchErrorMsg, ['addCardActionSheet']);  
+            }
+        }).catch((err) => {
+            console.log(err);
             // hideLoading();
-            // showErrorModal(catchErrorMsg, ['addCardActionSheet']);  
-        }
-    }).catch((err) => {
-        console.log(err);
-        // hideLoading();
-        // showErrorModal(catchErrorMsg, ['addCardActionSheet']);
+            // showErrorModal(catchErrorMsg, ['addCardActionSheet']);
+        });
     });
-})
+
+    document.querySelector('.edit-child-plan').addEventListener('click', (el) => {
+        el.preventDefault();
+        let form = document.querySelector('.edit-child-plan-form');
+        console.log(form)
+        fetch(urlPrefix + `admin/plan/child/update`, {
+            method : 'post',
+            headers,
+            body : JSON.stringify({
+                ...jsonFormData(form)
+            })
+        }).then((res) => {
+            hideLoading();
+            return res.json();
+            // return res.text();
+        })
+        .then((data) => {
+            console.log(data);
+            if('errors' in data){
+                let errorMsg = getResponse(data);
+                // showErrorModal(errorMsg, ['addCardActionSheet']);
+                alert(errorMsg);
+            }
+            else if('success' in data){
+                let successMsg = getResponse(data, 'success');
+                // showSuccessModal(successMsg, ['addCardActionSheet'])
+                alert(successMsg)
+                setTimeout(() => {
+                    location.reload();
+                }, 2000)
+            } else {
+                // hideLoading();
+                // showErrorModal(catchErrorMsg, ['addCardActionSheet']);  
+            }
+        }).catch((err) => {
+            console.log(err);
+            // hideLoading();
+            // showErrorModal(catchErrorMsg, ['addCardActionSheet']);
+        });
+    })
 </script>

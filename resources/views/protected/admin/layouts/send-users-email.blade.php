@@ -29,7 +29,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea name="message"></textarea>
+                        <textarea name=""></textarea>
 
                     </div>
                 </div>           </div>

@@ -61,20 +61,20 @@ class DepositController extends Controller {
             );
        }
        $user_settings = UserSettings::where('user_id', Auth::id())->first();
-       if(!$user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
-                ], 401
-            );
-        }
-       if($validated['pin']  !== $user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Incorrect pin']]
-                ], 401
-            );
-       }
+    //    if(!$user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
+    //             ], 401
+    //         );
+    //     }
+    //    if($validated['pin']  !== $user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Incorrect pin']]
+    //             ], 401
+    //         );
+    //    }
        $user_id = Auth::id();
 
        $data = [
@@ -210,20 +210,20 @@ class DepositController extends Controller {
        }
 
        $user_settings = UserSettings::where('user_id', Auth::id())->first();
-       if(!$user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
-                ], 401
-            );
-        }
-       if($validated['pin']  !== $user_settings->pin) {
-            return response()->json(
-                [
-                    'errors' => ['message' => ['Incorrect pin']]
-                ], 401
-            );
-       }
+    //    if(!$user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Please go to settings and setup a trasaction pin!']]
+    //             ], 401
+    //         );
+    //     }
+    //    if($validated['pin']  !== $user_settings->pin) {
+    //         return response()->json(
+    //             [
+    //                 'errors' => ['message' => ['Incorrect pin']]
+    //             ], 401
+    //         );
+    //    }
 
        $user_id = Auth::id();
 

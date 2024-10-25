@@ -108,7 +108,7 @@ class ProfitCronJobController extends Controller {
                 ChildInvestmentPlan::where('id', $plan->id)->update([
                     'expired' => 1
                 ]);
-                $promoEnded = ChildInvestmentPlan::where(['parent_investment_plan_id' => $parent_promo_plan->id, 'expired' => 0])->count();
+
                 //send email
                 $details = [
                     'subject' => 'Notice of An Expired Promo Plan',
@@ -130,96 +130,6 @@ class ProfitCronJobController extends Controller {
                     ]);
                 }
 
-                if(!$promoEnded) {
-                    $users = User::where(['on_promo' => 1])->get();
-
-                    // send to admins
-                    $details = [
-                        'subject' => 'Promotion Period Is Over',
-                        'username' => $user->name,
-                        'plan' => $plan->name,
-                        'exp_date' => get_day_format($plan->exp_date),
-                        'created_date' => get_day_format($plan->created_at),
-                        'view' => 'emails.user.promoendnotice',
-                    ];
-                    foreach($admins as $admin) {
-                        $mailer = new \App\Mail\MailSender($details);
-                        Mail::to($user->email)->send($mailer);
-                    }
-
-                    User::where(['on_promo' => 1])->update(['on_promo' => 0]);
-                }
-
-            }
-        }
-    }
-
-    public function addCompounding() {
-        $users = User::where(['on_compounding' => 1])->get();
-
-        foreach($users as $user) {
-            User::where('id', $user->id)->increment('deposit_balance', $user->compounding_amount);
-            // send email
-            $details = [
-                'subject' => 'Compounding Interest received.',
-                'amount' => number_format($user->compounding_amount, 2),
-                'view' => 'emails.user.compoundinginterest',
-                'date' => date("Y-m-d H:i:s"),
-                'email' => $user->email,
-                'username' => $user->name
-            ];
-            $mailer = new \App\Mail\MailSender($details);
-            Mail::to($user->email)->send($mailer);
-
-            $date = date_create($user->compounding_end_at);
-            if(date_format($date, 'd/m/Y') == date('d/m/Y')) {
-                User::where('id', $user->id)->update([
-                    'on_compounding' => 0,
-                    'compounding_end_at' => null,
-
-                ]);
-
-                $date1 = $user->compounding_starts_at;
-                $date2 = strtotime(date("Y-m-d"));
-                $diff = $date2 - $date1;
-                $days = floor($diff / (60 * 60 * 24));
-
-                $per = number_format((($user->compounding_amount * (1 + $days))/100) * 10, 2);
-                $penalty_date = get_day_name(addDaysToDate(date("Y-m-d H:i:s"), 14));
-                // send email
-                $message = <<<HERE
-                <p>
-                    We hope this email finds you well, we will be pleased to inform you that your compound trading has been completed and your earnings are ready to be withdrawn.
-                </p>
-                <p>
-                    To make your withdrawal, please pay your ITF (International Transaction Fee) of 10% ($$per) USD of your account balance. From now until $penalty_date. <br> You need to pay your ITF so your withdrawal will be processed and approved.
-                </p>
-                <p>
-                    Contact live support for your ITF wallet address, please note that if you do not pay your ITF (International Transaction Fee) within the specified time, your account will be suspended.
-                </p>
-                
-                <p>
-                    Please do not hesitate to contact us through any of our support channels if you require any assistance or have any questions as we are here to take care of our own and happy to help.<br>
-                </p>
-                <p>
-                    Thank you for choosing Fortress Miners investment company LLC .
-                </p>
-                <p>
-                    Regards, Fortress miners investment Company LLC 
-                    
-                    Note: Do Not Disclose Account Details To A Third Party.
-                </p>
-HERE;
-                $details = [
-                    'subject' => 'Compounding Has Ended Successfully.',
-                    'message' => $message,
-                    'view' => 'emails.user.compoundingended',
-                    'date' => date("Y-m-d H:i:s"),
-                    'email' => $user->email
-                ];
-
-                $mailer = new \App\Mail\MailSender($details);
-                Mail::to($user->email)->send($mailer);
             }
         }
     }

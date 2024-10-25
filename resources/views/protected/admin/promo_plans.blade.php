@@ -21,7 +21,7 @@
         <style>
             .order_btn_group .list-inline-item a.btn {
                 font-size: 0.9rem;
-                font-weight: 400;
+                font-weight: 400; 
             }
         </style>
         <div class="page-title m-b-20">
@@ -112,10 +112,10 @@
                                                     <i class="dropdown-icon fe fe-edit"></i> 
                                                     Edit
                                                 </a>
-                                                <a href="#" class="dropdown-item ajaxDeleteItem" data-confirm_ms="Are you sure you want to delete this item">
+                                                {{-- <a href="#" class="dropdown-item ajaxDeleteItem" data-confirm_ms="Are you sure you want to delete this item">
                                                     <i class="dropdown-icon fe fe-trash-2"></i> 
                                                     Delete
-                                                </a>
+                                                </a> --}}
                                             </div>
                                         </div>
                                     </td>

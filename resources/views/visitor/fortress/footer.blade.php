@@ -10,7 +10,7 @@ margin-top: 100%;
 <div class="col-sm-2">
 <ul>
 <li>
-<a href="/about-us">About {{ env('APP_NAME') }}</a>
+<a href="/about-us">About Aionprimecorporation</a>
 <ul>
 <li><a href="/about-us#overview">Overview</a></li>
 <li><a href="/about-us#history">History</a></li>
@@ -61,13 +61,13 @@ Corporate Information
 </div>
 <div class="footer-copyright">
 <ul class="container footer-nav">
-<li class=""><a href="https://www.youtube.com/@globalminnersfx">Youtube</a></li>
-<li><a href="https://t.me/@globalminnersfx">Telegram</a></li>
-<li><a href="https://instagram.com/globalminnersfx?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+<li class=""><a href="https://www.youtube.com/@Aionprimecorporation">Youtube</a></li>
+<li><a href="https://t.me/@Aionprimecorporation">Telegram</a></li>
+<li><a href="https://instagram.com/Aionprimecorporation?igshid=YmMyMTA2M2Y=">Instagram</a></li>
 </ul>
 <br>
 <ul class="container footer-nav">
-<li class="legalName">Copyright &copy; {{ date('Y') }} {{ env('APP_NAME') }} Investment Group LLC</li>
+<li class="legalName">Copyright &copy; {{ date('Y') }} Aionprimecorporation Investment Group LLC</li>
 <li><a href="/terms">Terms of Use</a></li>
 <li><a href="/privacy">Privacy Statement</a></li>
 </ul>

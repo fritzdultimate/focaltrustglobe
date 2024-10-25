@@ -65,7 +65,7 @@
             <tbody>
               <tr>
                 <td class="o_bg-dark o_px o_py-md o_br-t o_sans o_text" align="center" data-bgcolor="Bg Dark" data-size="Text Default" data-min="12" data-max="20" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 24px;background-color: #0b0c22;border-radius: 4px 4px 0px 0px;padding-left: 16px;padding-right: 16px;padding-top: 24px;padding-bottom: 24px;">
-                  <p style="margin-top: 0px;margin-bottom: 0px;"><a class="o_text-white" href="{{ Request::getSchemeAndHttpHost() }}/" data-color="White" style="text-decoration: none;outline: none;color: #ffffff;"><img src="{{ asset('assets/images/email_logo.png') }}" width="136" height="36" alt="{{ env('SITE_NAME') }}" style="max-width: 136px;-ms-interpolation-mode: bicubic;vertical-align: middle;border: 0;line-height: 100%;height: auto;outline: none;text-decoration: none;" data-crop="false"></a></p>
+                  <p style="margin-top: 0px;margin-bottom: 0px;"><a class="o_text-white" href="{{ Request::getSchemeAndHttpHost() }}/" data-color="White" style="text-decoration: none;outline: none;color: #ffffff;"><img src="" width="136" height="36" alt="{{ env('SITE_NAME') }}" style="max-width: 136px;-ms-interpolation-mode: bicubic;vertical-align: middle;border: 0;line-height: 100%;height: auto;outline: none;text-decoration: none;" data-crop="false"></a></p>
                 </td>
               </tr>
             </tbody>
@@ -190,7 +190,7 @@
                   <!--[if mso]><table width="584" cellspacing="0" cellpadding="0" border="0" role="presentation"><tbody><tr><td align="center"><![endif]-->
                   <div class="o_col-6s o_sans o_text o_text-secondary o_center" data-color="Secondary" data-size="Text Default" data-min="12" data-max="20" style="font-family: Helvetica, Arial, sans-serif;margin-top: 0px;margin-bottom: 0px;line-height: 24px;max-width: 584px;color: #424651;text-align: center;">
                     <small style="margin-top: 0px;margin-bottom: 0px;">
-                        If you have any questions about this email, simply reply to this email or reach out to our <a href="https://focaltradingltd.com/support">support team</a> for help.
+                        If you have any questions about this email, simply reply to this email or reach out to our <a href="{{ Request::getSchemeAndHttpHost() }}/support">support team</a> for help.
                     </small>
                   </div>
                   <!--[if mso]></td></tr></table><![endif]-->

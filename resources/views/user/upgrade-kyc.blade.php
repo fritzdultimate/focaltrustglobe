@@ -47,14 +47,6 @@
             <p>Note that every details should be well shown.</p>
             </div>
         </div>
-        @elseif($user_settings->current_kyc_leve !== 'tier 1')
-            <p class="section mt-3 text-center">
-                Front KYC Approved.
-            </p>
-        @else
-            <p class="section mt-3 text-center">
-                Front KYC Uploaded
-            </p>
         @endif
 
         @if(!$user_settings->back_kyc)
@@ -80,14 +72,6 @@
                 <p>Note that every details should be well shown.</p>
             </div>
         </div>
-        @elseif($user_settings->current_kyc_leve !== 'tier 1')
-            <p class="section mt-3 text-center">
-                Back KYC Approved.
-            </p>
-        @else
-            <p class="section mt-3 text-center">
-                Back KYC Uploaded
-            </p>
         @endif
 
         @if(!$user_settings->address_proof)
@@ -107,19 +91,11 @@
                 <input id="address_proof" type="file" accept="image/*" name="address_proof" class="document_file" style="display: none" data-img="proof-kyc">
             </div>
             <div class="mt-1">
-                <p class="section mt-3 text-center">
+                <p>
                     Upload legal trading documents.
                 </p>
             </div>
         </div>
-        @elseif($user_settings->current_kyc_leve !== 'tier 1')
-            <p class="section mt-3 text-center">
-                Trading Document Approved.
-            </p>
-        @else
-            <p class="section mt-3 text-center">
-                Trading Document Uploaded
-            </p>
         @endif
 
     </div>

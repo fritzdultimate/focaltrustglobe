@@ -4,7 +4,7 @@
      <ul class="cd-dropdown-content">
         <li><a href="/about-us"> about us </a></li>
         <li><a href="/faqs"> FAQ </a></li>  
-        <li><a href="mailto:admin@globalminnersfx.com">Contact us </a></li>
+        <li><a href="mailto:admin@Aionprimecorporation.com"> contact us </a></li>
         <li><a href="/login"> login </a></li>
         <li><a href="/register"> register </a></li>
     </ul>

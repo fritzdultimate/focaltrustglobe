@@ -13,6 +13,14 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.Aionprimecorporation.com",
+            "logo": "https://www.Aionprimecorporation.com/images/logo/favicon.png"
+        }
+    </script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="{{ env('SITE_NAME') }}" />
     <meta name="keywords" content="{{ env('SITE_NAME') }}" />

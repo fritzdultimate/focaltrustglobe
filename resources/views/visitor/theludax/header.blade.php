@@ -6,9 +6,9 @@
         </div>
         <div class="container mbc">
             <div class="logo">
-                <a href="/"><img src="{{ asset('images/Fortress_Logo_PMS_542_6in.png') }}" alt="{{ env('APP_NAME') }}"></a>
+                <a href="/"><img src="{{ asset('favicon.png') }}" alt="Aionprimecorporation" style="width: 40px; height: 40px"></a>
             </div>
-            <ul id="mainnav" class="m-0" data-name="{{ env('APP_NAME') }}">
+            <ul id="mainnav" class="m-0" data-name="Aionprimecorporation">
                 <li class="hide-on-mobil">
                     <a href="/" class="menu-item translatable">Home</a>
                 </li>

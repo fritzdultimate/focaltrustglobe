@@ -9,7 +9,7 @@ Hold Long Duration Assets</h2>
 </div>
 </header>
 <div class="container">
-<p class="permcap-intro">Aionprimecorporation manages three publicly traded permanent capital vehicles as part of the Private Equity business.</p>
+<p class="permcap-intro">{{ env('APP_NAME') }} manages three publicly traded permanent capital vehicles as part of the Private Equity business.</p>
 <div class="f-row justify-content-center permanent-cap-vehicles"><div class="col-sm-4">
 <div class="infobox">
 <p class="permcap-logo">

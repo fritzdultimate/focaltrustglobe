@@ -54,7 +54,7 @@
 <img src="../images/play-btn.png" class="img-responsive play-btn" />
 </a>
 </p>
-<h1>Overview of Aionprimecorporation's Credit Business</h1>
+<h1>Overview of {{ env('APP_NAME') }}'s Credit Business</h1>
 </section>
 </div>
 <div class="col-lg-4 col-md-6">
@@ -87,7 +87,7 @@
 <div class="item">
 <p class="item-title"><a href="#section1" class="viewer"><span></span>Lending</a></p>
 <div class="desc" id="section1">
-<p>Through the Aionprimecorporation Credit team&rsquo;s extensive sourcing capabilities, corporate and asset based loans are directly originated to middle market companies in a broad array of industries and against numerous asset class. The Corporate &amp; Asset Based Loans team has the flexibility to structure and price debt across all levels of the capital structure including senior, unitranche, second lien and mezzanine, often with equity co-investments. The team employs a dynamic, multi-faceted underwriting approach which looks to underlying cash flows and enterprise value or to the value of tangible and intangible assets. The team employs this analytical approach in all situations including buyouts, refinancings, growth, rescue, and distressed environments.</p></div>
+<p>Through the {{ env('APP_NAME') }} Credit team&rsquo;s extensive sourcing capabilities, corporate and asset based loans are directly originated to middle market companies in a broad array of industries and against numerous asset class. The Corporate &amp; Asset Based Loans team has the flexibility to structure and price debt across all levels of the capital structure including senior, unitranche, second lien and mezzanine, often with equity co-investments. The team employs a dynamic, multi-faceted underwriting approach which looks to underlying cash flows and enterprise value or to the value of tangible and intangible assets. The team employs this analytical approach in all situations including buyouts, refinancings, growth, rescue, and distressed environments.</p></div>
 </div>
 <div class="item">
 <p class="item-title"><a href="#section2" class="viewer"><span></span>Corporate Debt & Securities</a></p>
@@ -138,7 +138,7 @@
 </div>
 </div>
 <div role="tabpanel" class="tab-pane fade" id="funds">
-<p>The Aionprimecorporation Credit business employs a broad range of strategies to invest globally in credit and assets.  Our strategies are described below.</p>
+<p>The {{ env('APP_NAME') }} Credit business employs a broad range of strategies to invest globally in credit and assets.  Our strategies are described below.</p>
 <div class="panel-group" id="funds-accordion">
 <div class="panel panel-default">
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-target="#special-opporunities-funds" data-toggle="collapse" aria-expanded="true"><span class="glyphicon"></span>Credit Private Equity Strategies</a></h4></div>
@@ -156,7 +156,7 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-target="#credit-opportunities-funds" aria-expanded="false"><span class="glyphicon"></span>Lending Strategies</a></h4></div>
 <div id="credit-opportunities-funds" data-parent="#funds-accordion" class="collapse">
 <div class="tab-accordion-content">
-<p>Aionprimecorporation’ lending strategies focus on investments primarily in senior secured loans across various differentiated lending sectors.  The majority of loans are directly originated by Aionprimecorporation or where we are the lead club arranger.</p>
+<p>{{ env('APP_NAME') }}’ lending strategies focus on investments primarily in senior secured loans across various differentiated lending sectors.  The majority of loans are directly originated by {{ env('APP_NAME') }} or where we are the lead club arranger.</p>
 </div>
 </div>
 </div>
@@ -164,7 +164,7 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-target="#japan-opportunities-funds" aria-expanded="false"><span class="glyphicon"></span>Real Estate Strategies</a></h4></div>
 <div id="japan-opportunities-funds" data-parent="#funds-accordion"  class="collapse">
 <div class="tab-accordion-content">
-<p>Aionprimecorporation’ real estate focus on primarily opportunistic investments in commercial real estate across the United States, Europe, and Japan.</p>
+<p>{{ env('APP_NAME') }}’ real estate focus on primarily opportunistic investments in commercial real estate across the United States, Europe, and Japan.</p>
 </div>
 </div>
 </div>
@@ -172,19 +172,19 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-target="#real-estate-opportunities-funds" data-toggle="collapse" aria-expanded="false"><span class="glyphicon"></span>Credit Hedge Fund Strategies</a></h4></div>
 <div id="real-estate-opportunities-funds" data-parent="#funds-accordion"  class="collapse">
 <div class="tab-accordion-content">
-<p>Aionprimecorporation’ credit hedge fund strategies focus on investments in both private and public credit across loans, corporate debt and securities, portfolios and orphaned assets, real estate, and structured finance.</p>
+<p>{{ env('APP_NAME') }}’ credit hedge fund strategies focus on investments in both private and public credit across loans, corporate debt and securities, portfolios and orphaned assets, real estate, and structured finance.</p>
 </div>
 </div>
 </div>
 </div><!-- end panel-group --></div><!-- end tab-panel -->
 <div role="tabpanel" class="tab-pane fade" id="team-edge">
-<p>The following factors differentiate the Aionprimecorporation Credit team from other credit investors:</p>
+<p>The following factors differentiate the {{ env('APP_NAME') }} Credit team from other credit investors:</p>
 <div class="panel-group" id="teamedge-accordion">
 <div class="panel panel-default">
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-target="#experience" aria-expanded="true"><span class="glyphicon"></span>Experience across credit cycles</a></h4></div>
 <div id="experience" class="collapse show" data-parent="#teamedge-accordion">
 <div class="tab-accordion-content">
-<p>The Aionprimecorporation Credit team has lengthy experience as credit investors. Senior credit team members were actively investing during the US Savings & Loan Crisis and in related RTC opportunities, and led major investment efforts in Asia during the Asian Financial Crisis. The team’s credit experience extends across all of our investment groups (ABS & Residential Assets, Corporate & Asset Based Loans, Corporate Securities, Portfolio Acquisitions, Real Estate Loans & Equity) creating valuable cross-class expertise. The Credit team’s deep, long term history as active credit investors through various types of investment environments has created a process and discipline which set the team apart from market participants who have only recently become interested in credit opportunities as a result of disruptions in global markets.</p>
+<p>The {{ env('APP_NAME') }} Credit team has lengthy experience as credit investors. Senior credit team members were actively investing during the US Savings & Loan Crisis and in related RTC opportunities, and led major investment efforts in Asia during the Asian Financial Crisis. The team’s credit experience extends across all of our investment groups (ABS & Residential Assets, Corporate & Asset Based Loans, Corporate Securities, Portfolio Acquisitions, Real Estate Loans & Equity) creating valuable cross-class expertise. The Credit team’s deep, long term history as active credit investors through various types of investment environments has created a process and discipline which set the team apart from market participants who have only recently become interested in credit opportunities as a result of disruptions in global markets.</p>
 </div>
 </div>
 </div>
@@ -192,7 +192,7 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-target="#flexibility" aria-expanded="false"><span class="glyphicon"></span>Investment flexibility</a></h4></div>
 <div id="flexibility" class="collapse" data-parent="#teamedge-accordion">
 <div class="tab-accordion-content">
-<p>The Aionprimecorporation Credit team pursues a broad, diversified strategy covering multiple asset classes and structures, supported by professionals in each of the primary investment groups. This allows the team to move in and out of sectors based on changing circumstances and to tackle opportunities requiring specialization in more than one investment category. This approach positions the Credit team to take advantage of investment opportunities that fall between the cracks of managers without the capability to underwrite diverse pools of credits.</p>
+<p>The {{ env('APP_NAME') }} Credit team pursues a broad, diversified strategy covering multiple asset classes and structures, supported by professionals in each of the primary investment groups. This allows the team to move in and out of sectors based on changing circumstances and to tackle opportunities requiring specialization in more than one investment category. This approach positions the Credit team to take advantage of investment opportunities that fall between the cracks of managers without the capability to underwrite diverse pools of credits.</p>
 </div>
 </div>
 </div>
@@ -200,7 +200,7 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-target="#focus" data-toggle="collapse" aria-expanded="false"><span class="glyphicon"></span>Fundamental credit focus and structured finance approach</a></h4></div>
 <div id="focus" class="collapse" data-parent="#teamedge-accordion">
 <div class="tab-accordion-content">
-<p>The Aionprimecorporation Credit team is an active, fundamental value, asset based investor. The team is comfortable with, and to some degree specializes in, difficult credits, difficult borrowers and difficult situations. The Credit team is very focused on properly pricing, structuring, collateralizing, monitoring and, if necessary, litigating to maximize the value of credit investments.</p>
+<p>The {{ env('APP_NAME') }} Credit team is an active, fundamental value, asset based investor. The team is comfortable with, and to some degree specializes in, difficult credits, difficult borrowers and difficult situations. The Credit team is very focused on properly pricing, structuring, collateralizing, monitoring and, if necessary, litigating to maximize the value of credit investments.</p>
 </div>
 </div>
 </div>
@@ -208,7 +208,7 @@
 <div class="panel-heading"><h4 class="panel-title"><a role="button" data-target="#active-mgmt" data-parent="#teamedge-accordion" data-toggle="collapse" aria-expanded="false"><span class="glyphicon"></span>Active asset management</a></h4></div>
 <div id="active-mgmt" class="collapse" data-parent="#teamedge-accordion" >
 <div class="tab-accordion-content">
-<p>The Aionprimecorporation Credit team is extremely active in maximizing the value of investments through intensive asset management. The Credit team includes over 80 dedicated asset management professionals in eleven geographic locations. Certain transactions are economically compelling because returns will be generated through intensive servicing, such as in residential whole loans. The Aionprimecorporation Credit team has been an active owner and operator in managing distressed assets and is fully capable and qualified to continue to manage and service complex assets.</p>
+<p>The {{ env('APP_NAME') }} Credit team is extremely active in maximizing the value of investments through intensive asset management. The Credit team includes over 80 dedicated asset management professionals in eleven geographic locations. Certain transactions are economically compelling because returns will be generated through intensive servicing, such as in residential whole loans. The {{ env('APP_NAME') }} Credit team has been an active owner and operator in managing distressed assets and is fully capable and qualified to continue to manage and service complex assets.</p>
 </div>
 </div>
 </div>
@@ -223,8 +223,8 @@
 </div><!-- end row -->
 <div id="peter-briger" class="panel-collapse collapse" role="tabpanel" aria-labelledby="peter-briger-heading">
 <div class="tab-accordion-content">
-<p>Mr. Briger is Co-Chief Executive Officer of Aionprimecorporation and has been a member of the board of directors of Aionprimecorporation since November 2006. Mr. Briger has been a member of the Management Committee of Aionprimecorporation since 2002. Mr. Briger is responsible for the Credit and Real Estate business at Aionprimecorporation.</p>
-<p>Prior to joining Aionprimecorporation in March 2002, Mr. Briger spent fifteen years at Goldman, Sachs &amp; Co., where he became a partner in 1996. Mr. Briger serves on the Board of Trustees of Princeton University, is the Chairman of the U.S. Soccer Investment Committee and is a member of the Council on Foreign Relations. In addition, Mr. Briger serves on the board of several charitable organizations, including the UCSF Foundation and Tipping Point.</p>
+<p>Mr. Briger is Co-Chief Executive Officer of {{ env('APP_NAME') }} and has been a member of the board of directors of {{ env('APP_NAME') }} since November 2006. Mr. Briger has been a member of the Management Committee of {{ env('APP_NAME') }} since 2002. Mr. Briger is responsible for the Credit and Real Estate business at {{ env('APP_NAME') }}.</p>
+<p>Prior to joining {{ env('APP_NAME') }} in March 2002, Mr. Briger spent fifteen years at Goldman, Sachs &amp; Co., where he became a partner in 1996. Mr. Briger serves on the Board of Trustees of Princeton University, is the Chairman of the U.S. Soccer Investment Committee and is a member of the Council on Foreign Relations. In addition, Mr. Briger serves on the board of several charitable organizations, including the UCSF Foundation and Tipping Point.</p>
 <p>Mr. Briger received a B.A. from Princeton University and an M.B.A. from the Wharton School of Business at the University of Pennsylvania.</p></div><!-- end tab-accordion-content -->
 </div><!-- end panel-collapse -->
 </div><!-- end panel -->
@@ -236,8 +236,8 @@
 </div><!-- end row -->
 <div id="constantine-dakolias" class="panel-collapse collapse" role="tabpanel" aria-labelledby="constantine-dakolias-heading">
 <div class="tab-accordion-content">
-<p>Mr. Dakolias is a Managing Partner of the Aionprimecorporation Credit Funds Business. Mr. Dakolias also serves on Aionprimecorporation&rsquo;s Management and Operating Committees.</p>
-<p>Prior to joining Aionprimecorporation in 2001, Mr. Dakolias was a Managing Director, Chief Credit Officer and co-founder of American Commercial Capital LLC (a specialty finance company) and Coronado Advisors (an SEC registered broker dealer), both of which were sold to Wells Fargo &amp; Co. in 2001. Mr. Dakolias was previously a director at RER Financial Group where he was responsible for the firm's acquisition efforts as a principal and as a provider of third party due diligence and asset management.</p>
+<p>Mr. Dakolias is a Managing Partner of the {{ env('APP_NAME') }} Credit Funds Business. Mr. Dakolias also serves on {{ env('APP_NAME') }}&rsquo;s Management and Operating Committees.</p>
+<p>Prior to joining {{ env('APP_NAME') }} in 2001, Mr. Dakolias was a Managing Director, Chief Credit Officer and co-founder of American Commercial Capital LLC (a specialty finance company) and Coronado Advisors (an SEC registered broker dealer), both of which were sold to Wells Fargo &amp; Co. in 2001. Mr. Dakolias was previously a director at RER Financial Group where he was responsible for the firm's acquisition efforts as a principal and as a provider of third party due diligence and asset management.</p>
 <p>Mr. Dakolias serves on the Board of Trustees for Columbia University, the American School of Classical Studies at Athens, and the Millbrook School. Mr. Dakolias is also a co-founder and member of the Executive Committee of The Hellenic Initiative, as well as a member of the Council on Foreign Relations. Mr. Dakolias received a B.S. in Physics from Columbia University.</p></div><!-- end tab-accordion-content -->
 </div><!-- end panel-collapse -->
 </div><!-- end panel -->
@@ -249,8 +249,8 @@
 </div><!-- end row -->
 <div id="andrew-mcknight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="andrew-mcknight-heading">
 <div class="tab-accordion-content">
-<p><a name="_Hlk34078271"></a>Mr. McKnight is a Managing Partner of the Aionprimecorporationminers Credit Funds Business. Mr. McKnight heads the liquid strategies and serves on the investment committee for the Credit Funds and is a member of the Management Committee of Aionprimecorporation. Mr. McKnight is also the Co-CIO of the Drawbridge Special Opportunities Fund, the Fortresminerss Lending Funds and Aionprimecorporation Credit Opportunities Funds.</p>
-<p>Prior to joining Aionprimecorporation in February 2005, Mr. McKnight worked at Fir Tree Partners where he was responsible for analyzing and trading high yield and convertible bonds, bank debt, derivatives and equities for the value-based hedge fund. Prior to Fir Tree, Mr. McKnight worked at Goldman, Sachs &amp; Co. in Leveraged Finance and the Distressed Bank Debt trading group. Mr. McKnight serves on the Board for the Center for Politics at the University of Virginia, the Board of Advisors for SMU&rsquo;s Cox School of Business Alternative Asset Management Center and the Board of Center for New American Security. In addition, Mr. McKnight is a member of the Council on Foreign Relations.</p>
+<p><a name="_Hlk34078271"></a>Mr. McKnight is a Managing Partner of the {{ env('APP_NAME') }}miners Credit Funds Business. Mr. McKnight heads the liquid strategies and serves on the investment committee for the Credit Funds and is a member of the Management Committee of {{ env('APP_NAME') }}. Mr. McKnight is also the Co-CIO of the Drawbridge Special Opportunities Fund, the Fortresminerss Lending Funds and {{ env('APP_NAME') }} Credit Opportunities Funds.</p>
+<p>Prior to joining {{ env('APP_NAME') }} in February 2005, Mr. McKnight worked at Fir Tree Partners where he was responsible for analyzing and trading high yield and convertible bonds, bank debt, derivatives and equities for the value-based hedge fund. Prior to Fir Tree, Mr. McKnight worked at Goldman, Sachs &amp; Co. in Leveraged Finance and the Distressed Bank Debt trading group. Mr. McKnight serves on the Board for the Center for Politics at the University of Virginia, the Board of Advisors for SMU&rsquo;s Cox School of Business Alternative Asset Management Center and the Board of Center for New American Security. In addition, Mr. McKnight is a member of the Council on Foreign Relations.</p>
 <p>Mr. McKnight received a B.A. in Economics from the University of Virginia.</p></div><!-- end tab-accordion-content -->
 </div><!-- end panel-collapse -->
 </div><!-- end panel -->
@@ -262,8 +262,8 @@
 </div><!-- end row -->
 <div id="joshua-pack" class="panel-collapse collapse" role="tabpanel" aria-labelledby="joshua-pack-heading">
 <div class="tab-accordion-content">
-<p>Mr. Pack is a Managing Partner of the Credit Funds Business. Mr. Pack heads the illiquid strategies and serves on the investment committee for the Credit Funds and is a member of the Management Committee of Aionprimecorporation. Mr. Pack is also the Co-CIO of Credit &amp; Lending Funds at Aionprimecorporation.</p>
-<p>Mr. Pack has 20 years of credit investment and workout experience through multiple credit cycles. Since joining the Credit Funds Business at its inception in 2002, Mr. Pack has analyzed, structured and negotiated hundreds of lending, structured equity and real estate transactions. Prior to joining Aionprimecorporation, Mr. Pack was a Vice President with Wells Fargo &amp; Co. in the capital markets group. Before that, Mr. Pack was a Vice President with American Commercial Capital, an independent specialty finance company focused on corporate and real estate lending to middle market businesses that was subsequently acquired by Wells Fargo &amp; Co. in 2001. Mr. Pack serves as a Director on multiple corporate and philanthropic Boards.</p>
+<p>Mr. Pack is a Managing Partner of the Credit Funds Business. Mr. Pack heads the illiquid strategies and serves on the investment committee for the Credit Funds and is a member of the Management Committee of {{ env('APP_NAME') }}. Mr. Pack is also the Co-CIO of Credit &amp; Lending Funds at {{ env('APP_NAME') }}.</p>
+<p>Mr. Pack has 20 years of credit investment and workout experience through multiple credit cycles. Since joining the Credit Funds Business at its inception in 2002, Mr. Pack has analyzed, structured and negotiated hundreds of lending, structured equity and real estate transactions. Prior to joining {{ env('APP_NAME') }}, Mr. Pack was a Vice President with Wells Fargo &amp; Co. in the capital markets group. Before that, Mr. Pack was a Vice President with American Commercial Capital, an independent specialty finance company focused on corporate and real estate lending to middle market businesses that was subsequently acquired by Wells Fargo &amp; Co. in 2001. Mr. Pack serves as a Director on multiple corporate and philanthropic Boards.</p>
 <p>Mr. Pack attended the United States Air Force Academy and received a B.A. in Economics from California State University, San Marcos.</p>
 <p>&nbsp;</p></div><!-- end tab-accordion-content -->
 </div><!-- end panel-collapse -->
@@ -276,8 +276,8 @@
 </div><!-- end row -->
 <div id="marc-furstein" class="panel-collapse collapse" role="tabpanel" aria-labelledby="marc-furstein-heading">
 <div class="tab-accordion-content">
-<p>Marc K. Furstein is the President of Credit Funds at Aionprimecorporation Investment Group LLC and is also a member of the firm&rsquo;s Management Committee.</p>
-<p>Prior to joining Aionprimecorporation in July 2001, Mr. Furstein co-founded and was the Chief Operating Officer of American Commercial Capital (a specialty finance company) and Coronado Advisors (an SEC registered broker dealer). Both companies were sold to Wells Fargo in 2001. Prior to that, Mr. Furstein was co-manager of the opportunistic real estate loan business of Goldman, Sachs &amp; Co. In that position, he structured and negotiated senior and mezzanine commercial loans and acquisition facilities. Mr. Furstein was also involved in the acquisition of distressed business, consumer and real estate loans and had responsibility for the management of more than 60 portfolios of such assets. In this role, he designed and oversaw the implementation of financial reporting, tax, compliance and asset management systems, policies and procedures. Mr. Furstein started his career in Goldman&rsquo;s Financial Institutions Group, where he focused on M&amp;A transactions and corporate finance.</p>
+<p>Marc K. Furstein is the President of Credit Funds at {{ env('APP_NAME') }} Investment Group LLC and is also a member of the firm&rsquo;s Management Committee.</p>
+<p>Prior to joining {{ env('APP_NAME') }} in July 2001, Mr. Furstein co-founded and was the Chief Operating Officer of American Commercial Capital (a specialty finance company) and Coronado Advisors (an SEC registered broker dealer). Both companies were sold to Wells Fargo in 2001. Prior to that, Mr. Furstein was co-manager of the opportunistic real estate loan business of Goldman, Sachs &amp; Co. In that position, he structured and negotiated senior and mezzanine commercial loans and acquisition facilities. Mr. Furstein was also involved in the acquisition of distressed business, consumer and real estate loans and had responsibility for the management of more than 60 portfolios of such assets. In this role, he designed and oversaw the implementation of financial reporting, tax, compliance and asset management systems, policies and procedures. Mr. Furstein started his career in Goldman&rsquo;s Financial Institutions Group, where he focused on M&amp;A transactions and corporate finance.</p>
 <p>Mr. Furstein received a B.A. from Columbia University and an M.B.A. from the Wharton School at the University of Pennsylvania.</p></div><!-- end tab-accordion-content -->
 </div><!-- end panel-collapse -->
 </div><!-- end panel -->

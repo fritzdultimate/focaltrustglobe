@@ -2,13 +2,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Aionprimecorporation | Verify Account</title>
+        <title>{{ env('APP_NAME') }} | Verify Account</title>
         <script type="application/ld+json">
             {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "url": "https://www.Aionprimecorporation.com",
-            "logo": "https://www.Aionprimecorporation.com/images/logo/favicon.png"
+            "url": "https://www.{{ env('APP_NAME') }}.com",
+            "logo": "https://www.{{ env('APP_NAME') }}.com/images/logo/favicon.png"
             }
         </script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,7 +17,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="theme-color" content="#000000">
-        <meta name="description" content="Aionprimecorporation | Login and start your financial freedom journey!">
+        <meta name="description" content="{{ env('APP_NAME') }} | Login and start your financial freedom journey!">
         <meta name="keywords"
             content="deposit, wallet, app, money, send, receive, withdraw, invest" />
         <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}" sizes="32x32">

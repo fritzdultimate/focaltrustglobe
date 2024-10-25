@@ -1,7 +1,7 @@
 
 <!doctype html>
 <head>
-<title>Aionprimecorporation - Site Maintenance</title>
+<title>{{ env('APP_NAME') }} - Site Maintenance</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 <style>
   html, body { padding: 0; margin: 0; width: 100%; height: 100%; }
@@ -21,6 +21,6 @@
     <h1>We&rsquo;ll be back soon!</h1>
     <div>
         <p>Sorry for the inconvenience. We&rsquo;re performing some maintenance at the moment.  we&rsquo;ll be back up shortly!</p>
-        <p>&mdash; The Aionprimecorporation Team</p>
+        <p>&mdash; The {{ env('APP_NAME') }} Team</p>
     </div>
 </article>

@@ -159,7 +159,7 @@ Login
 				<div class="col-sm-6 col-lg-4">
 					<div class="services-item"> <i class="flaticon-online-banking icon"></i>
 						<h3>
-<a href="https://t.me/Aionprimecorporation">Join Our Telegram Group</a>
+<a href="https://t.me/globalminnersfx">Join Our Telegram Group</a>
 </h3>
 						<p>Click to join our company's official telegram group where you'll meet and interact with other thousands of investors and beneficiaries.</p>
 					</div>
@@ -183,7 +183,7 @@ Login
 				<div class="col-sm-6 col-lg-4">
 					<div class="services-item"> <i class="flaticon-consulting icon"></i>
 						<h3>
-<a href="https://api.whatsapp.com/send?phone=121487680476&text=Welcome%20To%Aionprimecorporation%20Help%20Center">24/7 Friendly Support</a>
+<a href="https://api.whatsapp.com/send?phone=121487680476&text=Welcome%20To%Globalminnersfx%20Help%20Center">24/7 Friendly Support</a>
 </h3>
 						<p>We provide 24/7 friendly support in in all languages preferable to clients. We're always responsible to take care</p>
 					</div>

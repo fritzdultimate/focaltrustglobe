@@ -86,11 +86,11 @@
 <div class="highlight-wrapper">
 <div class="highlight-item">
 <p><img src="{{ asset('images/Fortress_Black_Logo_PMS_542_6in.png') }}" class="img-responsive" style="border-bottom:solid 1px #949494; width: 80%; margin: auto; height: 70%" loading="lazy" /></p>
-<p class="news-link-home">Aionprimecorporation Investment Group Announces Launch of Aionprimecorporation Private Wealth Solutions</p>
+<p class="news-link-home">{{ env('APP_NAME') }} Investment Group Announces Launch of {{ env('APP_NAME') }} Private Wealth Solutions</p>
 </div>
 <div class="highlight-item">
 <p><img src="{{ asset('images/Fortress_Black_Logo_PMS_542_6in.png') }}" class="img-responsive" style="border-bottom:solid 1px #949494" loading="lazy" /></p>
-<p class="news-link-home">Aionprimecorporation Announces Employee Student Debt Relief Program</p>
+<p class="news-link-home">{{ env('APP_NAME') }} Announces Employee Student Debt Relief Program</p>
 </div>
 
 
@@ -103,8 +103,8 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<h1>Briefly About Aionprimecorporation</h1>
-<p>Aionprimecorporation Investment Group LLC is a leading, highly diversified global investment manager with approximately $45.7 billion<sup>(1)</sup> of assets under management as of September 30, 2022. Founded in 1998, Aionprimecorporation manages assets on behalf of over 1,900 institutional clients and private investors worldwide across a range of credit and real estate, private equity and permanent capital investment strategies.
+<h1>Briefly About {{ env('APP_NAME') }}</h1>
+<p>{{ env('APP_NAME') }} Investment Group LLC is a leading, highly diversified global investment manager with approximately $45.7 billion<sup>(1)</sup> of assets under management as of September 30, 2022. Founded in 1998, {{ env('APP_NAME') }} manages assets on behalf of over 1,900 institutional clients and private investors worldwide across a range of credit and real estate, private equity and permanent capital investment strategies.
 </p>
 <p>Investment performance is our cornerstone - we strive to generate strong risk adjusted returns for our investors over the long term.</p>
 <p>We had approximately 885 employees and 199 investment professionals as of September 30, 2022, at our headquarters in New York and our affiliate offices around the globe.</p></div><!-- end col-md-6 -->
@@ -467,7 +467,7 @@ text-align: center;
 <img src="../images/play-btn.png" class="img-responsive play-btn" />
 </a>
 </p>
-<!--<h1>Overview of Aionprimecorporation's Credit Business</h1>-->
+<!--<h1>Overview of {{ env('APP_NAME') }}'s Credit Business</h1>-->
 </section>
 </div>
 <div class="col-lg-4 col-md-6">
@@ -548,7 +548,7 @@ text-align: center;
 <div class="col-md-5 mb-5">
 <div class="item-card bg-alt">
 <h3 style="color: #0d6efd">Unlimited Referral Bonus</h3>
-<p>Promote Aionprimecorporation and earn unlimited referral commission from each referral links.</p>
+<p>Promote {{ env('APP_NAME') }} and earn unlimited referral commission from each referral links.</p>
 </div>
 </div>
 <div class="col-md-5 mb-5">
@@ -587,7 +587,7 @@ text-align: center;
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<h2>Aionprimecorporation's FAQs:</h2>
+<h2>{{ env('APP_NAME') }}'s FAQs:</h2>
 <div class="panel-group" role="tablist" aria-multiselectable="true" id="accordion">
 @foreach($faqs as $faq)
 <div class="panel panel-core-competencies">
@@ -595,7 +595,7 @@ text-align: center;
 <a role="button" data-toggle="collapse" data-target="#faq-{{ $faq->priority}}-id" aria-expanded="false" aria-controls="capital-markets"><span class="glyphicon"></span>{{ $faq->question }}</a>
 </h4>
 <div id="faq-{{ $faq->priority}}-id" class="panel-collapse collapse" data-parent="#accordion" role="tabpanel" aria-labelledby="faq-{{ $faq->priority}}-heading">
-<p>Aionprimecorporation has considerable capital markets expertise, and has expertise in securing low-cost, low-risk financing for its investments by accessing the debt and equity capital markets.</p></div>
+<p>{{ env('APP_NAME') }} has considerable capital markets expertise, and has expertise in securing low-cost, low-risk financing for its investments by accessing the debt and equity capital markets.</p></div>
 </div><!-- end panel -->
 @endforeach
 </div><!-- end panel-group -->
@@ -654,8 +654,8 @@ text-align: center;
 <div class="row what-we-do" style="color:#fff;">
 <div class="col-sm-10">
 <h2>What We Do</h2>
-<p><strong>Aionprimecorporation Investment Group LLC</strong> is a leading, highly diversified global investment manager.</p>
-<p>Founded in 1998, Aionprimecorporation manages $45.7 billion of assets under management as of September 30, 2022, on behalf of over 1,900 institutional clients and private investors worldwide across a range of credit and real estate, private equity and permanent capital investment strategies.</p><p><a href="/about-us" class="btn btn-what-we-do">Learn More</a></p>
+<p><strong>{{ env('APP_NAME') }} Investment Group LLC</strong> is a leading, highly diversified global investment manager.</p>
+<p>Founded in 1998, {{ env('APP_NAME') }} manages $45.7 billion of assets under management as of September 30, 2022, on behalf of over 1,900 institutional clients and private investors worldwide across a range of credit and real estate, private equity and permanent capital investment strategies.</p><p><a href="/about-us" class="btn btn-what-we-do">Learn More</a></p>
 </div>
 </div><!-- end row -->
 </div><!-- end container -->

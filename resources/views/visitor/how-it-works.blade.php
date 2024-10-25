@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h3 style="font-weight: bold;">
-                            This is a brief description of how Aionprimecorporation.com operates.
+                            This is a brief description of how {{ env('APP_NAME') }}.com operates.
                         </h3>
                         <p>
                             Fortress miners is a private company that specializes in Investment Management Firm, Private Equity, Credit Funds, Railroads, Hedge Funds and Traditional Asset Management and helps you trade your cryptocurrencies to earn daily profit.

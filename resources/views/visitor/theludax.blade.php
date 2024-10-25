@@ -5,7 +5,7 @@
         <section id="home">
             <div class="container">
                 <div class="content" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
-                    <!-- <h1><img src="visitors1/img/logo.png" alt="Aionprimecorporation"></h1> -->
+                    <!-- <h1><img src="visitors1/img/logo.png" alt="{{ env('APP_NAME') }}"></h1> -->
                     <p class="translatable" data-trans="header_parrafo">We are <span class="highlight">the best Crypyocurrency Investment</spa> Platform, <span class="highlight">leader</span> in <span class="highlight">innovation</span> and <span class="highlight">disruption</span> in a new financial market.</p>
                 </div>
             </div>
@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="row two-cols vcentered inverted">
                     <div class="col" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
-                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">Aionprimecorporation</span></div>
+                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">{{ env('APP_NAME') }}</span></div>
                         <h2 class="translatable" data-trans="first_section_mision">Our mission</h2>
                         <p class="translatable" data-trans="first_section_first_parrafo">We create the opportunity to grow professionally and financially by providing investment tools and financial education to improve people's quality of life.</p>
                         <p class="translatable" data-trans="first_section_second_parrafo">Making it possible for people all over the world to have the opportunity to generate a higher income.</p>
@@ -37,7 +37,7 @@
             <div class="container">
                 <div class="row two-cols vcentered inverted">
                     <div class="col" data-aos="fade-left" data-aos-anchor-placement="center-bottom" data-aos-offset="100">
-                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">Aionprimecorporation</span></div>
+                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">{{ env('APP_NAME') }}</span></div>
                         <h2 class="translatable" data-trans="second_section_vision">Our vision</h2>
                         <p class="translatable" data-trans="second_section_first_parrafo">Our vision is to create a financially disruptive company that develops cutting-edge financial models to become the company with the largest and most efficient investment in the industry, through innovation, leadership and talent of the people within the organization.</p>
                     </div>
@@ -134,7 +134,7 @@
                     <div class="brow">
                         <div class="col-12">
                             <div class="section-header">
-                                <h2 class="title">Aionprimecorporation investment Plans</h2>
+                                <h2 class="title">{{ env('APP_NAME') }} investment Plans</h2>
                                 <p>Our investment plans are tailored to meet your specific budgets and aid you grow with us</p>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                 <div class="feature-content">
                                     <h5 class="title">Global</h5>
                                     <p>
-                                    Aionprimecorporation is a global establishment with its office in {{ env("SITE_ADDRESS") }}
+                                    {{ env('APP_NAME') }} is a global establishment with its office in {{ env("SITE_ADDRESS") }}
                                     </p>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@
                                 <div class="feature-content">
                                     <h5 class="title">Secure</h5>
                                     <p>
-                                        At Aionprimecorporation Our investment and trading platform is security tight guiding against hacks and identity theft
+                                        At {{ env('APP_NAME') }} Our investment and trading platform is security tight guiding against hacks and identity theft
                                     </p>
                                 </div>
                             </div>
@@ -312,7 +312,7 @@
                         <div class="col-12">
                             <div class="section-header">
                                 <h2 class="title">How To Get Profit.</h2>
-                                <p>At Aionprimecorporation Investing is at its best and easy steps, You to can do it</p>
+                                <p>At {{ env('APP_NAME') }} Investing is at its best and easy steps, You to can do it</p>
                             </div>
                         </div>
                     </div>
@@ -354,7 +354,7 @@
                         <div class="col-12">
                             <div class="section-header">
                                 <h2 class="title">Our Features</h2>
-                                <p>At Aionprimecorporation LTD we give you the best reliable platform you can trust and some of the features that makes us stand out includes the following</p>
+                                <p>At {{ env('APP_NAME') }} LTD we give you the best reliable platform you can trust and some of the features that makes us stand out includes the following</p>
                             </div>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                         <div class="col-12">
                             <div class="section-header">
                                 <h2 class="title">About Us</h2>
-                                <p>Aionprimecorporation investment has no defined limits on size or structure, but generally targets direct equity investments of $10 million to $45.7 billion, as well as select smaller venture investments</p>
+                                <p>{{ env('APP_NAME') }} investment has no defined limits on size or structure, but generally targets direct equity investments of $10 million to $45.7 billion, as well as select smaller venture investments</p>
                             </div>
                         </div>
                     </div>
@@ -705,7 +705,7 @@
                 <div class="row two-cols vcentered">
                     <!-- <div class="col" data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-offset="100"> -->
                     <div class="col">
-                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">Aionprimecorporation</span></div>
+                        <div class="vcentered"><span class="logo-line"></span><span class="minilogo">{{ env('APP_NAME') }}</span></div>
                         <h2 class="translatable" data-trans="fiveth_section_card_title">The Journey Starts Here</h2>
                         <p class="translatable" data-trans="fiveth_section_card_text">Knowing where the world is going and how we can position ourselves as leaders in mega trends is our priority.</p>
                         <p class="translatable" data-trans="fiveth_section_card_text2">Our Investment team works on the development of new standards that will mark a new generation of economic models, in this way we always remain an innovative and avant-garde company.</p>

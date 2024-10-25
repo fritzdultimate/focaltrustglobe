@@ -15,7 +15,7 @@
                                     <div class="banner-caption cpn tc-light text-center">
                                         <div class="cpn-head">
                                             <h2 class="title ttu">Terms & Condition</h2>
-                                            <p>Aionprimecorporation Terms and Conditions</p>
+                                            <p>{{ env('APP_NAME') }} Terms and Conditions</p>
                                         </div>
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                             We strongly recommend to read the terms and conditions of the convention before registration on the website and becoming the company's investor.
                         </p>
                         <p>
-                            The rules, General terms and conditions of cooperation of the company Aionprimecorporation (the "Company") and the investor (hereinafter - the Investor) are prescribed in this section. This document alludes to the fact that both parties accept all regulations, which are spelled out in the document and agree to abide by them. The document comes into force once the registration on the website of the Company is completed by the Investor.
+                            The rules, General terms and conditions of cooperation of the company {{ env('APP_NAME') }} (the "Company") and the investor (hereinafter - the Investor) are prescribed in this section. This document alludes to the fact that both parties accept all regulations, which are spelled out in the document and agree to abide by them. The document comes into force once the registration on the website of the Company is completed by the Investor.
                         </p>
                         <h4>
                             GENERAL PROVISIONS
@@ -105,7 +105,7 @@
                             COPYRIGHT NOTICE
                         </h4>
                         <p>
-                            www.Aionprimecorporation website, all the information and services hosted are the private property of the Company and are protected by copyright law.
+                            www.{{ env('APP_NAME') }} website, all the information and services hosted are the private property of the Company and are protected by copyright law.
                         </p>
                         <p>
                             In the case of copyright infringement (harming website, copy materials, and so on.) the Investor will be prosecuted; his account will be blocked, along with funds that were on his personal account.

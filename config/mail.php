@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => "smtp.titan.email",
+            'host' => "smtp.hostinger.com",
             'port' => 587,
             'encryption' => 'tls',
-            'username' => 'do-not-reply@aionprimecorporation.com',
-            'password' => "@Aionprimecorporation.com",
+            'username' => 'support@globalminnersfx.com',
+            'password' => 'Ent%$Amazed90@',
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => 'do-not-reply@aionprimecorporation.com',
-        'name' => 'Aionprimecorporation',
+        'address' => 'support@globalminnersfx.com',
+        'name' => 'Globalminnersfx',
     ],
 
     /*

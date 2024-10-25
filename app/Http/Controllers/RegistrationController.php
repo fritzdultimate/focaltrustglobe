@@ -35,7 +35,7 @@ class RegistrationController extends Controller {
             'password' => Hash::make($validated['password']),
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
-            'email_verified_at' => date('Y-m-d H:i:s')
+            // 'email_verified_at' => date('Y-m-d H:i:s')
         ];
 
         if($has_referral && $referrer) {

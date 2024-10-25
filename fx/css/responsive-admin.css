@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************
+responsive-admin
+******************************************************************/
+
+@media only screen and (max-width: 1199px){
+
+}
+
+@media only screen and (max-width: 991px){
+.header_left {
+  text-align: center;
+}
+.header_left .breadcrumb {
+  width: 100%;
+}
+.header_right {
+  text-align: center;
+}
+.header_right h5 {
+  padding: 15px;
+}
+.admin_top_left h5 {
+  text-align: center; margin-bottom:30px;
+}
+.admin_top_right {
+  text-align: center;
+}
+.earning_withdraw{ margin-bottom:30px;}
+
+.plan_box {
+	margin-top: 25px;
+}
+}
+
+@media only screen and (max-width: 767px){
+.stats_box{ margin-bottom:30px;}
+.admin_footer h6{ text-align:center;}
+.admin_footer h6 {
+  line-height: 28px;
+}
+.payment_select ul li {
+  padding: 10px;
+}
+
+}
+
+@media only screen and (max-width:600px){
+.package_block:after{ right:0; left:0; bottom:-7px; margin:auto; background-position:right bottom; background-size:100% auto;}
+.plans .col-xs-6 {
+	width: 100%;
+}
+.main_title h2 {
+	font-size: 21px;
+}
+}
+
+@media only screen and (max-width: 520px){
+.admin_top_right ul li {
+  padding: 20px 0;
+  width: 20%;
+}
+
+.user_detail h4 {
+  margin: 20px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.user_detail {
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 480px){
+.deposit_method_box {
+  padding: 10px;
+}
+
+}
+
+@media only screen and (max-width: 420px){
+.stats_box ul li {
+  width: 100%; 
+}
+.stats_box ul li span{ border:none;}
+
+.stats_box ul li b {
+  text-align: center;
+}
+.earning_withdraw .col-xs-6{ width:100%; border:none;}
+.knob_value_cirle{ margin-bottom:30px;}
+.deposit_method_box h3 span {
+  line-height: 60px;
+  padding: 0;
+}
+
+}
+
+@media only screen and (max-width: 360px){
+.account_detail ul li span {
+  font-size: 14px;
+  margin: 10px 0 0;
+  text-align: center;
+  width: 100%;
+}
+.account_detail ul li {
+  text-align: center;
+}
+.table_page {
+  display: block;
+  float: none;
+  margin-top: 20px;
+}
+
+
+}
+
+@media only screen and (max-width: 320px){
+
+}

@@ -24,6 +24,9 @@
                         <div class="nav-item"> 
                             <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
                         </div>
+                        <div class="nav-item"> 
+                            <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
+                        </div>
                         <a class="consultant-btn" href="/login">
                             Login
                         </a>

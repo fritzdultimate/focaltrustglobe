@@ -42,7 +42,7 @@ function processLogin(form){
             let successMsg = getResponse(data, 'success');
             document.getElementById('success-message').innerHTML = successMsg;
             toastbox('toast-16')
-            redirectTo('/admin/new/members')
+            redirectTo('/v1/admin/statistics')
         } else {
             document.getElementById('error-message').innerHTML = catchText;
             toastbox('toast-15')

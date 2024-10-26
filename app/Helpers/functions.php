@@ -6,6 +6,8 @@ use App\Models\Deposit;
 use App\Models\ParentInvestmentPlan;
 use App\Models\User;
 use App\Models\UserSettings;
+use App\Models\Withdrawal;
+use Carbon\Carbon;
 use Currency\Util\CurrencySymbolUtil;
 use Illuminate\Support\Facades\Auth;
 
@@ -74,6 +76,13 @@ function returnKycMessages($amount, $action = 'deposit') {
     $admin_settings = AdminSettings::first();
     $user = Auth::user();
 
+    $today_deposits = Deposit::where([
+        'user_id' => $user['id']
+    ])->whereDate('created_at', Carbon::today())->sum('amount');
+    $today_withdrawals = Withdrawal::where([
+        'user_id' => $user['id'],
+    ])->whereDate('created_at', Carbon::today())->sum('amount');
+
     if($action == 'deposit') {
         if($amount > $admin_settings->deposit_limit_level_1 && $user_settings->current_kyc_leve == 'tier 1') {
             $level_1_amount = returnCurrencyLocale($user_settings->currency, $admin_settings->deposit_limit_level_1);
@@ -81,11 +90,11 @@ function returnKycMessages($amount, $action = 'deposit') {
             return $msg;
        } elseif($amount > $admin_settings->deposit_limit_level_2 && $user_settings->current_kyc_leve == 'tier 2') {
             return "You can only make deposit requests  not greater than " . returnCurrencyLocale($user_settings->currency, $admin_settings->deposit_limit_level_2) . " at once, upgrade your account for higher deposit request limit!";
-        } elseif (($user->today_deposits == $admin_settings->daily_deposit_limit_level_1 || $amount + $user->today_deposits > $admin_settings->daily_deposit_limit_level_1) && $user_settings->current_kyc_leve == 'tier 1') {
+        } elseif (($today_deposits == $admin_settings->daily_deposit_limit_level_1 || $amount + $today_deposits > $admin_settings->daily_deposit_limit_level_1) && $user_settings->current_kyc_leve == 'tier 1') {
             return 'Daily deposit request limit exeeded, upgrade account for higher limit!';
         }
     
-        elseif (($user->today_deposits == $admin_settings->daily_deposit_limit_level_2 || $amount + $user->today_deposits > $admin_settings->daily_deposit_limit_level_2) && $user_settings->current_kyc_leve == 'tier 2') {
+        elseif (($today_deposits == $admin_settings->daily_deposit_limit_level_2 || $amount + $today_deposits > $admin_settings->daily_deposit_limit_level_2) && $user_settings->current_kyc_leve == 'tier 2') {
             return 'Daily deposit request limit exeeded, upgrade your account for higher limit!';
         }
     } elseif($action == 'withdrawal') {
@@ -93,11 +102,11 @@ function returnKycMessages($amount, $action = 'deposit') {
             return "You can only make withdrawal requests not greater than " . returnCurrencyLocale($user_settings->currency, $admin_settings->withdrawal_limit_level_1) . " at once, upgrade your account for higher withdrawal requests limit!";
        } elseif($amount > $admin_settings->withdrawal_limit_level_2 && $user_settings->current_kyc_leve == 'tier 2') {
             return "You can only make withdrawal requests not greater than " . returnCurrencyLocale($user_settings->currency, $admin_settings->withdrawal_limit_level_2) . " at once, upgrade your account for higher withdrawal requests limit!";
-        } elseif (($user->today_withdrawals == $admin_settings->daily_withdrawal_limit_level_1 || $amount + $user->today_withdrawals > $admin_settings->daily_withdrawal_limit_level_1) && $user_settings->current_kyc_leve == 'tier 1') {
+        } elseif (($today_withdrawals == $admin_settings->daily_withdrawal_limit_level_1 || $amount + $today_withdrawals > $admin_settings->daily_withdrawal_limit_level_1) && $user_settings->current_kyc_leve == 'tier 1') {
             return 'Daily withdrawal request limit exeeded, upgrade account for higher limit!';
         }
     
-        elseif (($user->today_withdrawals == $admin_settings->daily_withdrawal_limit_level_2 || $amount + $user->today_withdrawals > $admin_settings->daily_withdrawal_limit_level_2) && $user_settings->current_kyc_leve == 'tier 2') {
+        elseif (($today_withdrawals == $admin_settings->daily_withdrawal_limit_level_2 || $amount + $today_withdrawals > $admin_settings->daily_withdrawal_limit_level_2) && $user_settings->current_kyc_leve == 'tier 2') {
             return 'Daily withdrawal request limit exeeded, upgrade your account for higher limit!';
         }
     } elseif($action == 'reinvest') {

@@ -276,9 +276,8 @@ class HomeController extends Controller {
         $admin_settings = AdminSettings::first();
 
         $today_deposits = Deposit::where([
-            'user_id' => $user['id'],
-            // 'created_at' => Carbon::today()
-        ])->sum('amount');
+            'user_id' => $user['id']
+        ])->whereDate('created_at', Carbon::today())->sum('amount');
         $today_withdrawal = Withdrawal::where([
             'user_id' => $user['id'],
             'created_at' => Carbon::today()

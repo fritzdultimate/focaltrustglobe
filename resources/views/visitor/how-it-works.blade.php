@@ -36,9 +36,9 @@
                             This is a brief description of how {{ env('APP_NAME') }}.com operates.
                         </h3>
                         <p>
-                            Fortress miners is a private company that specializes in Investment Management Firm, Private Equity, Credit Funds, Railroads, Hedge Funds and Traditional Asset Management and helps you trade your cryptocurrencies to earn daily profit.
-We Fortress miners  manages institutional clients and private investors worldwide across a range of private equity, credit, liquid hedge funds, and traditional asset management strategies.
-Fortress miners  invests in undervalued, distressed, and illiquid credit investments, is an investor in commercial real estate assets, cryptocurrency like Bitcoin, Ethereum usdt,  loans, and special situations worldwide, and provider of customized financing solutions. Fortress Credit's business invests globally in credit and assets and includes private equity style credit-focused funds, debt, and hybrid hedge fund structures.
+                            {{ env('APP_NAME') }} is a private company that specializes in Investment Management Firm, Private Equity, Credit Funds, Railroads, Hedge Funds and Traditional Asset Management and helps you trade your cryptocurrencies to earn daily profit.
+We {{ env('APP_NAME') }}  manages institutional clients and private investors worldwide across a range of private equity, credit, liquid hedge funds, and traditional asset management strategies.
+{{ env('APP_NAME') }}  invests in undervalued, distressed, and illiquid credit investments, is an investor in commercial real estate assets, cryptocurrency like Bitcoin, Ethereum usdt,  loans, and special situations worldwide, and provider of customized financing solutions. Fortress Credit's business invests globally in credit and assets and includes private equity style credit-focused funds, debt, and hybrid hedge fund structures.
                         </p>
                     </div>
                 </div>

@@ -253,7 +253,7 @@ Login
 				<h2>What Our Clients Say About Us</h2> 
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-4">
+				<div class="col-md-6 col-lg-4 mb-4">
                     <div class="testimonial-single shadow-sm rounded bg-white p-4">
                         <blockquote>
                             I keep recommending to my friends and family because of their overwhelmingly impressive financial services                        

@@ -20,7 +20,7 @@
                 <div class="side-nav">
                     <div class="language d-flex justify-content-center align-center" style="align-content: center">
                         <img src="{{ asset('images/gmfx-logo.png') }}" style="width: 50px; height: auto; margin-right:auto; margin-left:8px;" alt="Logo">
-                        <div class="nav-item"> 
+                        <div class="nav-item" style="margin-right:auto;"> 
                             <span  style="font-weight: 900;">GMF</span>
                         </div>
 

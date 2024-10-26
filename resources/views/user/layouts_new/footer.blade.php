@@ -61,7 +61,7 @@
                             <img src="{{$user_settings->profile_image_url ? asset($user_settings->profile_image_url) : asset('app_assets/img/sample/avatar/avatar1.png') }}" alt="image" class="imaged  w36" style="height: 36px">
                         </div>
                         <div class="in">
-                            <strong>{{ ucfirst($user->firstname) . ' ' . ucfirst($user->lastname) }}</strong>
+                            <strong>Hi, {{ ucfirst($user->lastname) }}</strong>
                             <div class="text-muted">{{ $user_settings->current_kyc_leve }}</div>
                         </div>
                         <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">

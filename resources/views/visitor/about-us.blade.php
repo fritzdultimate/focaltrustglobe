@@ -26,7 +26,7 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://aionprimecorporation.org/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Lato:500|Alegreya+Sans:400,500,700&amp;display=swap" rel="stylesheet">
-<link href="https://aionprimecorporation.org/assets/css/style50a6.css?v=8" rel="stylesheet">
+<link href="https://aionprimecorporation.org/assets/css/style50a6.css?v=3" rel="stylesheet">
 <link href="https://spacearn.com/assets2/css/themify-icons.css" rel="stylesheet">
 <!-- <link href="https://spacearn.com/assets2/css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="https://aionprimecorporation.org/assets/css/video-js-min.css" rel="stylesheet">

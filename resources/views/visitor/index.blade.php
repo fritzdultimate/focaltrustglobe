@@ -271,6 +271,25 @@ Login
                     </div>
 
                 </div>
+
+				<div class="col-md-6 col-lg-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            I keep recommending to my friends and family because of their overwhelmingly impressive financial services                        
+						</blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="img/pro.jpg" alt="client" width="50" class="img-fluid rounded-circle shadow-sm mr-3">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Nora Woodward</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
 			</div>
 		</div>
 	</section>

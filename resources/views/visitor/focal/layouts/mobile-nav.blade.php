@@ -20,10 +20,10 @@
                 <div class="side-nav">
                     <div class="language d-flex justify-content-center align-center" style="align-content: center">
                         <img src="{{ asset('images/gmfx-logo.png') }}" style="width: 50px; height: auto; margin-right:auto margin-left:8px;" alt="Logo">
-                        <span class="nav-item" style="font-weight: 900;">GMF</span>
                         <div class="nav-item"> 
                             <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
                         </div>
+
                         <div class="nav-item"> 
                             <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
                         </div>

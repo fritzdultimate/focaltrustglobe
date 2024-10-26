@@ -18,6 +18,7 @@
                     <li class="nav-item"> <a href="/faqs" class="nav-link">FAQ's</a> </li>
                 </ul>
                 <div class="side-nav">
+                    <img src="{{ asset('images/gmf-logo.png') }}" style="width: 50px; height: auto;" alt="Logo">
                     <div class="language d-flex justify-content-center">
                         <img src="{{ asset('images/gmf-logo.png') }}" style="width: 50px; height: auto; margin-left:auto; border:1px solid red;" alt="Logo">
                         <div class="nav-item"> 

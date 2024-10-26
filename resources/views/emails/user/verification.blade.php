@@ -94,7 +94,7 @@
                       <tbody>
                         <tr>
                           <td width="300" class="o_btn o_bg-primary o_br o_heading o_text" align="center" data-bgcolor="Bg Primary" data-size="Text Default" data-min="12" data-max="20" style="font-family: Helvetica, Arial, sans-serif;font-weight: bold;margin-top: 0px;margin-bottom: 0px;font-size: 16px;line-height: 24px;mso-padding-alt: 12px 24px;background-color: #126de5;border-radius: 4px;">
-                            <a class="o_text-white" href="{{ URL::to('/user/account/verification?token=' . $details['token'] . '&email=' . $details['email']) }}" data-color="White" style="text-decoration: none;outline: none;color: #ffffff;display: block;padding: 12px 24px;mso-text-raise: 3px;">Verify</a>
+                            <a class="o_text-white" href="{{ URL::to('/user/account/verification?token=' . $details['token'] . '&email=' . $details['email'] . '&username=' . $details['username']) }}" data-color="White" style="text-decoration: none;outline: none;color: #ffffff;display: block;padding: 12px 24px;mso-text-raise: 3px;">Verify</a>
                           </td>
                         </tr>
                       </tbody>

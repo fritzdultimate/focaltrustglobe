@@ -391,9 +391,13 @@ class RegistrationController extends Controller {
         $page_title = env('SITE_NAME') . ' | Account Verification';
         $already_verified = '';
         $email = $request->input('email');
+        $username = $request->input('username');
         $token = $request->input('token');
 
-        $user = User::where('email', $email)->first();
+        $user = User::where([
+            'email' => $email,
+            'name' => $username
+            ])->first();
 
         if($user->email_verified_at) {
             return view('verification-error', ['page_title' => env('SITE_NAME') . ' | Account Verification', 'message' =>'Your account has already been verified, please login'] );
@@ -408,7 +412,7 @@ class RegistrationController extends Controller {
             return view('verification-error', ['page_title' => env('SITE_NAME') . ' | Account Verification', 'message' =>'Verification email has expired, please reverify your account', 'expired' => 'expired']);
         }
 
-        User::where('email', $email)->update(['email_verified_at' => date('Y-m-d H:i:s')]);
+        User::where('name', $user->name)->update(['email_verified_at' => date('Y-m-d H:i:s')]);
 
         return view('verification-success', ['page_title' => env('SITE_NAME') . ' | Account Verification', 'message' =>'Congrats! Your account was verified successfully']);
     }

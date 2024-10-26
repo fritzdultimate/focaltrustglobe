@@ -260,7 +260,7 @@ Login
 						</blockquote>
                         <div class="client-img d-flex align-items-center justify-content-between pt-4">
                             <div class="d-flex align-items-center">
-                                <img src="img/pro.jpg" alt="client" width="50" class="img-fluid rounded-circle shadow-sm mr-3">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm mr-3">
                                 <div class="client-info">
                                     <h5 class="mb-0">Nora Woodward</h5>
                                     <small class="mb-0">Investor</small>

@@ -278,13 +278,12 @@ class HomeController extends Controller {
         $today_deposits = Deposit::where([
             'user_id' => $user['id']
         ])->whereDate('created_at', Carbon::today())->sum('amount');
-        $today_withdrawal = Withdrawal::where([
+        $today_withdrawals = Withdrawal::where([
             'user_id' => $user['id'],
-            'created_at' => Carbon::today()
-        ])->sum('amount');
+        ])->whereDate('created_at', Carbon::today())->sum('amount');
         // $user_account = 4536;
 
-        return view('user.dashboard', compact('page_title', 'today_deposits', 'mode', 'user', 'admin_settings', 'transactions', 'notification_count', 'total_locked_fund', 'total_savings', 'total_card_balance', 'total_referred', 'plans', 'wallets', 'promotion_plans', 'highest_promo_duration_date'));
+        return view('user.dashboard', compact('page_title', 'today_deposits', 'today_withdrawals', 'mode', 'user', 'admin_settings', 'transactions', 'notification_count', 'total_locked_fund', 'total_savings', 'total_card_balance', 'total_referred', 'plans', 'wallets', 'promotion_plans', 'highest_promo_duration_date'));
     }
 
 

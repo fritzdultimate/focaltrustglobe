@@ -94,7 +94,7 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <script src="{{ asset('dash/js/fns.js?ref=16') }}"></script>
-    <script src="{{ asset('dash/js/admin.login.js?ref=1') }}"></script>
+    <script src="{{ asset('dash/js/admin.login.js?ref=1e') }}"></script>
 
 
     <script>

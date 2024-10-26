@@ -64,8 +64,8 @@
     <div class="navbar-area sticky-top">
 		<div class="mobile-nav">
 			<a href="/" class="logo">
-				<!--<img src="{{ asset('images/FOCAL8.png') }}" style="width: 100px; height: 100px" alt="Logo">-->
-				<h4>{{ env('SITE_NAME') }}</h4>
+				<img src="{{ asset('images/gmf-logo.png') }}" style="width: 100px; height: 100px" alt="Logo">
+				{{-- <h4>{{ env('SITE_NAME') }}</h4> --}}
 			</a>
 		</div>
 		@include('visitor.focal.layouts.mobile-nav')

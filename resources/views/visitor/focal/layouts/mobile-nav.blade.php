@@ -23,7 +23,7 @@
                             <img src="{{ asset('images/gmfx-logo.png') }}" style="width: 50px; height: auto;" alt="Logo">
                             &nbsp;
                             <div class="nav-item"> 
-                                <span  style="font-weight: 900;">GMF</span>
+                                <span  style="font-weight: 900; font-size:20px;">GMF</span>
                             </div>
                         </div>
 

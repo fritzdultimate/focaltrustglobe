@@ -149,42 +149,7 @@ filter: none;
 </div>
 </nav>
 <div id="carousel-home" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators" style="display:none;">
-<li data-target="#carousel-home" data-slide-to="0" class=""></li>
-<li data-target="#carousel-home" data-slide-to="1" class=""></li>
-<li data-target="#carousel-home" data-slide-to="2" class=""></li>
-<li data-target="#carousel-home" data-slide-to="3" class="active"></li>
-<li data-target="#carousel-home" data-slide-to="4"></li>
-<li data-target="#carousel-home" data-slide-to="5"></li>
-</ol>
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-<div class="carousel-item">
-<h1 class="carousel-caption">Sophisticated Global Investment Strategies for Institutional Investors and Private Clients</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/new-york.jpg" alt="Sophisticated Global Investment Strategies for Institutional Investors and Private Clients">
-</div>
-<div class="carousel-item">
-<h1 class="carousel-caption">Specialized Investment Expertise Across a Broad Range of Industries and Asset Classes</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/sanfrancisco.jpg" alt="Specialized Investment Expertise Across a Broad Range of Industries and Asset Classes">
-</div>
-<div class="carousel-item">
-<h1 class="carousel-caption">A Disciplined Investment Process Focused on Delivering Superior Returns</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/london.jpg" alt="A Disciplined Investment Process Focused on Delivering Superior Returns">
-</div>
-<div class="carousel-item active">
-<h1 class="carousel-caption">A Business Model Predicated on a Deep Alignment of Interests With Investors</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/sydney.jpg" alt="A Business Model Predicated on a Deep Alignment of Interests With Investors">
-</div>
-<div class="carousel-item">
-<h1 class="carousel-caption">A Performance-driven Culture, With Extensive Intellectual Capital</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/tokyo.jpg" alt="A Performance-driven Culture, With Extensive Intellectual Capital">
-</div>
-<div class="carousel-item">
-<h1 class="carousel-caption">A Trusted Partner to Over 1,800 Institutional Investors and Private Clients</h1>
-<img src="https://aionprimecorporation.org/home-elements/carousel/rome.jpg" alt="A Trusted Partner to Over 1,800 Institutional Investors and Private Clients">
-</div>
-</div><!-- end carousel-inner -->
+
 <center>
   <div id="ytWidget" class="hidden-sm">
 

@@ -65,7 +65,7 @@
 		<div class="mobile-nav" style="border: 1px solid red">
 			<a href="/" class="logo">
 				<img src="{{ asset('images/gmf-logo.png') }}" style="width: 100px; height: 100px" alt="Logo">
-				{{-- <h4>{{ env('SITE_NAME') }}</h4> --}}
+				<h4>{{ env('SITE_NAME') }}</h4>
 			</a>
 		</div>
 		@include('visitor.focal.layouts.mobile-nav')

@@ -21,6 +21,7 @@
                     <div class="language d-flex justify-content-center align-center" style="align-content: center">
                         <div style="margin-right:auto; margin-left:8px; display:flex; align-items:center">
                             <img src="{{ asset('images/gmfx-logo.png') }}" style="width: 50px; height: auto;" alt="Logo">
+                            &nbsp;
                             <div class="nav-item"> 
                                 <span  style="font-weight: 900;">GMF</span>
                             </div>

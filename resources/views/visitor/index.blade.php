@@ -256,13 +256,13 @@ Login
 				<div class="col-md-6 col-lg-4 mb-4">
                     <div class="testimonial-single shadow-sm rounded bg-white p-4">
                         <blockquote>
-                            I keep recommending to my friends and family because of their overwhelmingly impressive financial services                        
+                            Investing here has been a game-changer. The returns are solid, and the transparency is something I value. Crypto can be volatile, but I feel safe with this platform.
 						</blockquote>
                         <div class="client-img d-flex align-items-center justify-content-between pt-4">
                             <div class="d-flex align-items-center">
-                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 5px;">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
                                 <div class="client-info">
-                                    <h5 class="mb-0">Nora Woodward</h5>
+                                    <h5 class="mb-0">Sophia J.</h5>
                                     <small class="mb-0">Investor</small>
                                 </div>
                             </div>
@@ -272,16 +272,146 @@ Login
 
                 </div>
 
-				<div class="col-md-6 col-lg-4">
+				<div class="col-md-6 col-lg-4 mb-4">
                     <div class="testimonial-single shadow-sm rounded bg-white p-4">
                         <blockquote>
-                            I keep recommending to my friends and family because of their overwhelmingly impressive financial services                        
+                            I've tried other crypto investment platforms, but this one has provided the best ROI by far. The process is smooth, and the customer support is top-notch. Highly recommended!
 						</blockquote>
                         <div class="client-img d-flex align-items-center justify-content-between pt-4">
                             <div class="d-flex align-items-center">
-                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm mr-3">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
                                 <div class="client-info">
-                                    <h5 class="mb-0">Nora Woodward</h5>
+                                    <h5 class="mb-0">Michael B.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            As a first-time crypto investor, I was skeptical, but this platform has exceeded my expectations. The team really seems to care about investor success.
+						</blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Aisha L.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            What sets this platform apart is the detailed analytics and consistent updates. I'm always aware of where my money is and how it's performing.
+						</blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">David O.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            I’ve been investing in crypto for a while, and this is one of the few platforms that provides a balance between security and growth. Very happy with my experience.
+						</blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Chris W.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            I appreciate the platform's user-friendly interface and clear explanations. I can track my investments and understand what’s happening with my funds without any hassle.
+						</blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Emma K.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            Great experience overall! I've already recommended this platform to a few friends because the returns are consistent and the withdrawal process is seamless.
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Tom S.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            This platform provides great support and transparency. It’s refreshing to see a crypto platform that’s dedicated to security and solid returns.
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Abdul R.</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+				<div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-single shadow-sm rounded bg-white p-4">
+                        <blockquote>
+                            I had my doubts, but investing here has been one of my best financial decisions this year. The returns are incredible, and I feel secure knowing my investment is in good hands.
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="{{ asset('images/pro-reviews.jpg') }}" alt="client" width="50" class="img-fluid rounded-circle shadow-sm" style="margin-right: 9px;">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Jennifer C.</h5>
                                     <small class="mb-0">Investor</small>
                                 </div>
                             </div>

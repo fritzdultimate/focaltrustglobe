@@ -19,7 +19,7 @@
                 </ul>
                 <div class="side-nav">
                     <div class="language d-flex justify-content-center">
-                        <img src="{{ asset('images/gmf-logo.png') }}" style="width: 100px; height: 100px" alt="Logo">
+                        <img src="{{ asset('images/gmf-logo.png') }}" alt="Logo" class="img-responsive">
                         <div class="nav-item"> 
                             <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
                         </div>

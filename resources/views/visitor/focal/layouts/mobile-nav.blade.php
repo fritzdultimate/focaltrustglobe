@@ -18,9 +18,9 @@
                     <li class="nav-item"> <a href="/faqs" class="nav-link">FAQ's</a> </li>
                 </ul>
                 <div class="side-nav">
-                    <div class="language d-flex justify-content-center">
+                    <div class="language d-flex justify-content-center align-content-center">
                         <img src="{{ asset('images/gmfx-logo.png') }}" style="width: 50px; height: auto; margin-right:auto margin-left:8px;" alt="Logo">
-                        <span style="font-weight: 900">GMF</span>
+                        <span style="font-weight: 900;">GMF</span>
                         <div class="nav-item"> 
                             <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
                         </div>

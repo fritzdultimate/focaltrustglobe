@@ -119,7 +119,7 @@
                 </li>
                 <li>
                     <strong>Block Confirmation</strong>
-                    <span>{{ $transaction->status !== 'accepted' ? rand(2,3) }}</span>
+                    <span>{{ $transaction->status !== 'accepted' ? 0 : rand(2,3) }}</span>
                 </li>
                 <li>
                     <strong>Block ID</strong>

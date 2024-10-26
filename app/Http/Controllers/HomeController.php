@@ -19,6 +19,7 @@ use App\Models\UserDoc;
 use Illuminate\Http\Request;
 use App\Models\SiteSettings;
 use App\Models\UserSettings;
+use Carbon\Carbon;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -273,9 +274,14 @@ class HomeController extends Controller {
         $total_card_balance = 4949;
         $total_referred = User::where('referrer', $user->name)->count();
         $admin_settings = AdminSettings::first();
+
+        $today_deposits = Deposit::where([
+            'user_id' => Auth::id(),
+            'created_at' => Carbon::today()
+        ])->sum('amount');
         // $user_account = 4536;
 
-        return view('user.dashboard', compact('page_title', 'mode', 'user', 'admin_settings', 'transactions', 'notification_count', 'total_locked_fund', 'total_savings', 'total_card_balance', 'total_referred', 'plans', 'wallets', 'promotion_plans', 'highest_promo_duration_date'));
+        return view('user.dashboard', compact('page_title', 'today_deposits', 'mode', 'user', 'admin_settings', 'transactions', 'notification_count', 'total_locked_fund', 'total_savings', 'total_card_balance', 'total_referred', 'plans', 'wallets', 'promotion_plans', 'highest_promo_duration_date'));
     }
 
 

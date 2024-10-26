@@ -251,11 +251,11 @@
                             <h4>Deposit limit</h4>
                             <p>Your daily limit progress</p>
                         </div>
-                        <div class="price">{{ get_currency_symbol($user_settings->currency)  }} {{ currency_conversion($user_settings->currency, $user->today_deposits) }}</div>
+                        <div class="price">{{ get_currency_symbol($user_settings->currency)  }} {{ currency_conversion($user_settings->currency, $today_deposits) }}</div>
                     </div>
                     <div class="progress text-center">
-                        <div class="progress-bar text-center" role="progressbar" style="width: {{  ($user->today_deposits/($user_settings->current_kyc_leve == 'tier 1' ? ($admin_settings->daily_deposit_limit_level_1/100) : ($admin_settings->daily_deposit_limit_level_2/100))) }}%;" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100"> {{  ($user->today_deposits/($user_settings->current_kyc_leve == 'tier 1' ? ($admin_settings->daily_deposit_limit_level_1/100) : ($admin_settings->daily_deposit_limit_level_2/100))) }}%</div>
+                        <div class="progress-bar text-center" role="progressbar" style="width: {{  ($today_deposits/($user_settings->current_kyc_leve == 'tier 1' ? ($admin_settings->daily_deposit_limit_level_1/100) : ($admin_settings->daily_deposit_limit_level_2/100))) }}%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100"> {{  ($today_deposits/($user_settings->current_kyc_leve == 'tier 1' ? ($admin_settings->daily_deposit_limit_level_1/100) : ($admin_settings->daily_deposit_limit_level_2/100))) }}%</div>
                     </div>
                 </div>
                 <!-- * item -->

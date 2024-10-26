@@ -48,7 +48,7 @@ class RegistrationRequet extends FormRequest {
         return [
             'email.required' => 'Email is required',
             'email.email' => 'Please provide a valid email',
-            'email.unique' => 'Email already registered',
+            // 'email.unique' => 'Email already registered',
             'username.required' => 'Username is required for registration',
             'username.unique' => 'Username already taken.',
             'username.alpha_num' => 'Username can only contain alphabets or number only',

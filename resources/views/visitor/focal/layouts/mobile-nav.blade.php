@@ -19,13 +19,15 @@
                 </ul>
                 <div class="side-nav">
                     <div class="language d-flex justify-content-center">
-                        <div class="nav-item"> <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
+                        <img src="{{ asset('images/gmf-logo.png') }}" style="width: 100px; height: 100px" alt="Logo">
+                        <div class="nav-item"> 
+                            <a href="/register" class="nav-link" style="font-weight: 600;color: #011a41;">Register</a> </li>
+                        </div>
+                        <a class="consultant-btn" href="/login">
+                            Login
+                        </a>
                     </div>
-                    <a class="consultant-btn" href="/login">
-                        Login.
-                    </a>
                 </div>
-            </div>
         </nav>
     </div>
 </div>

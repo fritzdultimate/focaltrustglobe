@@ -16,7 +16,7 @@
                                     <label class="label">Referral Code</label>
                                     <div class="input-group mb-2">
                                         <input type="text" class="form-control" placeholder=""
-                                            value="{{ 'https://aionprimecorporation.com/register?ref=' .  $user->name}}" id="accountNumberInput">
+                                            value="{{ 'https://.com/register?ref=' .  $user->name}}" id="accountNumberInput">
                                     </div>
                                 </div>
 

@@ -245,6 +245,14 @@ Login
 			</div>
 		</div>
 	</section>
+
+	<section class="demo10 works-area pt-100 pb-70 bg-light">
+		<div class="container">
+			<div class="section-title"> <span class="sub-title">Reviews</span>
+				<h2>What Our Clients Say About Us</h2> </div>
+			
+		</div>
+	</section>
 		
 	<div class="book-area ptb-100">
 		<div class="container">

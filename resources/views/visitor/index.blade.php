@@ -248,9 +248,29 @@ Login
 
 	<section class="demo10 works-area pt-100 pb-70 bg-light">
 		<div class="container">
-			<div class="section-title"> <span class="sub-title">Reviews</span>
-				<h2>What Our Clients Say About Us</h2> </div>
-			
+			<div class="section-title"> 
+				<span class="sub-title">Reviews</span>
+				<h2>What Our Clients Say About Us</h2> 
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+                    <div class="testimonial-single shadow-sm gray-light-bg rounded p-4">
+                        <blockquote>
+                            I keep recommending to my friends and family because of their overwhelmingly impressive financial services                        </blockquote>
+                        <div class="client-img d-flex align-items-center justify-content-between pt-4">
+                            <div class="d-flex align-items-center">
+                                <img src="img/pro.jpg" alt="client" width="50" class="img-fluid rounded-circle shadow-sm mr-3">
+                                <div class="client-info">
+                                    <h5 class="mb-0">Nora Woodward</h5>
+                                    <small class="mb-0">Investor</small>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+			</div>
 		</div>
 	</section>
 		

@@ -145,7 +145,7 @@
         <div class="listview-title mt-1">Others</div>
         <ul class="listview image-listview text mb-2 inset">
             <li>
-                <a href="mailto:abuse@fortressminers.com" class="item">
+                <a href="mailto:abuse@globalminnersfx.com" class="item">
                     <div class="in">
                         <div>Report Scam</div>
                     </div>
@@ -161,7 +161,7 @@
             </li>
 
             <li>
-                <a href="mailto:support@fortressminers.com" class="item">
+                <a href="mailto:support@globalminnersfx.com" class="item">
                     <div class="in">
                         <div>Help And Feedback</div>
                     </div>

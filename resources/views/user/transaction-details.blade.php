@@ -55,11 +55,13 @@
                     </div>
                 @endif
                 @if($transaction->type == 'withdrawal' && $transaction->status !== 'denied')
-                    
+                    <div class="text-center">
+                        <a href="mailto:support@globalminnersfx.com" class="text-warning text-center" style="font-size: 13px;">Why hasn't my withdrawal arrived?</a>
+                    </div>
                 @endif
                 @if($transaction->type == 'deposit' && $transaction->status == 'pending')
                     <div class="text-center">
-
+                        <a href="mailto:support@globalminnersfx.com" class="text-warning" style="font-size: 13px;">Why hasn't my deposit confirmed?</a>
                     </div>
                 @endif
             </div>
@@ -93,9 +95,9 @@
                     @else
                         <span>
                             <span style="font-size: 10px">
-                                bc1q0msg24mnmshhk5uyn9970zlpnfrjvhcpe0jk55 
+                                {{ substr($transaction->wallet->admin_wallet->currency_address, 0, 14). '.....' . substr($transaction->wallet->admin_wallet->currency_address, -14, 14) }} 
                             </span>
-                            <ion-icon data-copy-name="bc1q0msg24mnmshhk5uyn9970zlpnfrjvhcpe0jk55" data-copy-text="bc1q0msg24mnmshhk5uyn9970zlpnfrjvhcpe0jk55" class="copy-btn" name="copy-outline"></ion-icon>
+                            <ion-icon data-copy-name="Wallet address" data-copy-text="{{ $transaction->wallet->admin_wallet->currency_address }}" class="copy-btn" name="copy-outline"></ion-icon>
                         </span>
                     @endif
                 </li>
@@ -185,7 +187,7 @@
 
             // Copy the text
             navigator.clipboard.writeText(e.dataset.copyText);
-            document.getElementById("copied-message").innerHTML = e.dataset.copyName   '  copied to clipboard!';
+            document.getElementById("copied-message").innerHTML = e.dataset.copyName + '  copied to clipboard!';
             toastbox('toast-15')
             setTimeout(()=>{
                 e.name = 'copy-outline';
@@ -199,7 +201,7 @@
         let selectedWalletRate = await tocrypto(rate_el.dataset.symbol);
         totalAmount = selectedWalletRate * rate_el.dataset.amount;
 
-        rate_el.innerHTML = totalAmount.toFixed(9)   " "   rate_el.dataset.symbol.toUpperCase();
+        rate_el.innerHTML = totalAmount.toFixed(9) + " " + rate_el.dataset.symbol.toUpperCase();
 
         document.querySelector("#main-crypto-rate").innerHTML = totalAmount.toFixed(6);
         document.querySelector("#main-crypto-symbol").innerHTML = rate_el.dataset.symbol.toUpperCase();

@@ -11,7 +11,7 @@
                         <p>Our goal is to ensure the simplicity of investment. Having said these, we made the availability of suitable investment offers in other to ensure our client's maximum satisfaction.</p>
                         <ul>
                             <li> <i class='bx bx-phone-call'></i> <span>Phone:</span> <a href="tel:8825697456">+1 83038345822</a> </li>
-                            <li> <i class='bx bx-mail-send'></i> <span>Email:</span> <a href="mailto: support@globalminnersfx.com"><span>support@globalminnersfx.com</span></a> </li>
+                            <li> <i class='bx bx-mail-send'></i> <span>Email:</span> <a href="mailto: support@focaltrustglobe.org"><span>support@focaltrustglobe.org</span></a> </li>
                             
                         </ul>
                     </div>

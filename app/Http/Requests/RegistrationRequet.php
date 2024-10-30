@@ -30,7 +30,7 @@ class RegistrationRequet extends FormRequest {
      */
     public function rules() {
         return [
-            'email' => 'required|email:filter', 
+            'email' => 'required|email', 
             'username' => 'required|alpha_num|unique:users,name,except,id',
             'password' => 'required|min:6',
             'repassword' => 'required|same:password',

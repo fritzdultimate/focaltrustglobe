@@ -39,8 +39,8 @@ return [
             'host' => "smtp.hostinger.com",
             'port' => 587,
             'encryption' => 'tls',
-            'username' => 'support@globalminnersfx.com',
-            'password' => 'Ent%$Amazed90@',
+            'username' => 'support@focaltrustglobe.org',
+            'password' => '@Focalpoint456',
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => 'support@globalminnersfx.com',
-        'name' => 'Globalminnersfx',
+        'address' => 'support@focaltrustglobe.org',
+        'name' => 'Focaltrustglobe',
     ],
 
     /*

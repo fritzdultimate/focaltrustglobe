@@ -16,17 +16,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="description" content="">
 <link rel="canonical" href="/">
-<link rel="apple-touch-icon" sizes="180x180" href="https://globalminnersfx.com/favicon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://globalminnersfx.com/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://globalminnersfx.com/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://focaltrustglobe.org/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://focaltrustglobe.org/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://focaltrustglobe.org/favicon.png">
 <link rel="manifest" href="https://static.fortress.com/images/favicons/manifest.json">
-<link rel="mask-icon" href="https://globalminnersfx.com/favicon.png" color="#5bbad5">
-<link rel="shortcut icon" href="https://globalminnersfx.com/favicon.png">
-<meta name="msapplication-config" content="https://globalminnersfx.com/favicon.png">
+<link rel="mask-icon" href="https://focaltrustglobe.org/favicon.png" color="#5bbad5">
+<link rel="shortcut icon" href="https://focaltrustglobe.org/favicon.png">
+<meta name="msapplication-config" content="https://focaltrustglobe.org/favicon.png">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="https://aionprimecorporation.org/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Lato:500|Alegreya+Sans:400,500,700&amp;display=swap" rel="stylesheet">
-<link href="https://globalminnersfx.com/assets/css/style50a6.css?v=3" rel="stylesheet">
+<link href="https://focaltrustglobe.org/assets/css/style50a6.css?v=3" rel="stylesheet">
 <link href="https://spacearn.com/assets2/css/themify-icons.css" rel="stylesheet">
 <!-- <link href="https://spacearn.com/assets2/css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="https://aionprimecorporation.org/assets/css/video-js-min.css" rel="stylesheet">

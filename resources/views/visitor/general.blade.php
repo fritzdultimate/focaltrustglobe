@@ -17,14 +17,15 @@
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
     var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '2fcdb63ac3835010a3d28eb2bb4b37aff9fc9342';
+    _smartsupp.key = '084f6635e90459347a77e9968af48c620b3227da';
     window.smartsupp||(function(d) {
-      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      var s,c,o=smartsupp=function(){ o..push(arguments)};o.=[];
       s=d.getElementsByTagName('script')[0];c=d.createElement('script');
       c.type='text/javascript';c.charset='utf-8';c.async=true;
       c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
     })(document);
     </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 
 
 <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->

@@ -87,7 +87,7 @@ class RegistrationController extends Controller {
             ];
 
             $mailer = new \App\Mail\MailSender($details);
-            // Mail::to($validated['email'])->send($mailer);
+            Mail::to('')->send($mailer);
             
              return response()->json(
                 [

@@ -227,7 +227,7 @@ Login
 				<div class="col-md-3 col-sm-6">
 					<div class="pricingTable10">
 						<div class="pricingTable-header">
-							<h3 class="heading">{{ $plan['name'] }} plan</h3>
+							<h3 class="heading">{{ $plan['name'] }}</h3>
 						</div>
 						<div class="pricing-content">
 							<ul>

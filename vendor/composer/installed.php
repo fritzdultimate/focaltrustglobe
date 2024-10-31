@@ -3,7 +3,7 @@
         'name' => 'laravel/investments',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '439bb4f7c01f9031138a7c702b36358215c5d6e7',
+        'reference' => '3e61e9f7c5931eaea3a952ecabb120c4f41aedeb',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -415,7 +415,7 @@
         'laravel/investments' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '439bb4f7c01f9031138a7c702b36358215c5d6e7',
+            'reference' => '3e61e9f7c5931eaea3a952ecabb120c4f41aedeb',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -739,8 +739,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
-                1 => '1.0|2.0',
+                0 => '1.0|2.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'psr/simple-cache' => array(

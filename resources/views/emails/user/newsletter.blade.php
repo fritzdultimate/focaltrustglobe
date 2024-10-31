@@ -18,7 +18,7 @@
     <table class="m_-4703633964940861185wrapper" role="module" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed">
       <tbody><tr>
         <td style="font-size:6px;line-height:10px;padding:30px 50px 30px 45px" valign="top" align="center">
-         <img class="m_-4703633964940861185max-width CToWUd a6T" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica,arial,sans-serif;font-size:16px;max-width:100%!important;width:100%;height:auto!important" src="https://{{ env('SITE_NAME') }}.com/images/Fortress_Logo_PMS_542_6in.png" alt="" width="600" data-bit="iit" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 332px; top: 76px;"><div id=":xc" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Download attachment " jslog="91252; u014N:cOuCgd,Kr2w4b,xr6bB" data-tooltip-class="a1V" data-tooltip="Download"><div class="akn"><div class="aSK J-J5-Ji aYr"></div></div></div></div>
+         <img class="m_-4703633964940861185max-width CToWUd a6T" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica,arial,sans-serif;font-size:16px;max-width:100%!important;width:100%;height:auto!important" src="https://{{ env('APP_LINK') }}/images/Fortress_Logo_PMS_542_6in.png" alt="" width="600" data-bit="iit" tabindex="0"><div class="a6S" dir="ltr" style="opacity: 0.01; left: 332px; top: 76px;"><div id=":xc" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" role="button" tabindex="0" aria-label="Download attachment " jslog="91252; u014N:cOuCgd,Kr2w4b,xr6bB" data-tooltip-class="a1V" data-tooltip="Download"><div class="akn"><div class="aSK J-J5-Ji aYr"></div></div></div></div>
         </td>
       </tr>
     </tbody></table>

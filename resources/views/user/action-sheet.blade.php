@@ -54,7 +54,7 @@
                                     <div class="input-wrapper">
                                         <label class="label" for="account2d">Plan</label>
                                         <select class="form-control custom-select" id="account2d" name="child_plan_id">
-                                            <option>Choose wallet</option>
+                                            <option>Choose plan</option>
                                             @foreach($plans as $plan)
                                             <option value="{{ $plan->id }}">{{ ucfirst($plan->name) }} ({{ get_currency_symbol($user_settings->currency) }}{{ currency_conversion($user_settings->currency, $plan->minimum_amount) }} - {{ get_currency_symbol($user_settings->currency) }}{{ currency_conversion($user_settings->currency, $plan->maximum_amount) }}) </option>
                                             @endforeach

@@ -16,7 +16,7 @@
                                     <label class="label">Referral Code</label>
                                     <div class="input-group mb-2">
                                         <input type="text" class="form-control" placeholder=""
-                                            value="{{ 'https://globalminnersfx.com/register?ref=' .  $user->name}}" id="accountNumberInput">
+                                            value="{{ 'https://focaltrustglobe.org/register?ref=' .  $user->name}}" id="accountNumberInput">
                                     </div>
                                 </div>
 

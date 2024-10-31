@@ -161,7 +161,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:support@globalminnersfx.com" class="item">
+                            <a href="mailto:support@focaltrustglobe.org" class="item">
                                 <div class="icon-box bg-primary">
                                     <ion-icon name="chatbubble-outline"></ion-icon>
                                 </div>

@@ -56,12 +56,12 @@
                 @endif
                 @if($transaction->type == 'withdrawal' && $transaction->status !== 'denied')
                     <div class="text-center">
-                        <a href="mailto:support@globalminnersfx.com" class="text-warning text-center" style="font-size: 13px;">Why hasn't my withdrawal arrived?</a>
+                        <a href="mailto:support@focaltrustglobe.org" class="text-warning text-center" style="font-size: 13px;">Why hasn't my withdrawal arrived?</a>
                     </div>
                 @endif
                 @if($transaction->type == 'deposit' && $transaction->status == 'pending')
                     <div class="text-center">
-                        <a href="mailto:support@globalminnersfx.com" class="text-warning" style="font-size: 13px;">Why hasn't my deposit confirmed?</a>
+                        <a href="mailto:support@focaltrustglobe.org" class="text-warning" style="font-size: 13px;">Why hasn't my deposit confirmed?</a>
                     </div>
                 @endif
             </div>

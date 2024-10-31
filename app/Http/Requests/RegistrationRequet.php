@@ -30,7 +30,7 @@ class RegistrationRequet extends FormRequest {
      */
     public function rules() {
         return [
-            'email' => 'required', 
+            'email' => 'required|email', 
             'username' => 'required|alpha_num|unique:users,name,except,id',
             'password' => 'required|min:6',
             'repassword' => 'required|same:password',
@@ -47,7 +47,7 @@ class RegistrationRequet extends FormRequest {
     public function messages() {
         return [
             'email.required' => 'Email is required',
-            // 'email.email' => 'Please provide a valid email',
+            'email.email' => 'Please provide a valid email',
             // 'email.unique' => 'Email already registered',
             'username.required' => 'Username is required for registration',
             'username.unique' => 'Username already taken.',

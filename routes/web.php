@@ -213,3 +213,10 @@ Route::get('/admin/settings/limit', [App\Http\Controllers\AdminController::class
 
 Route::get('/admin/kyc', [App\Http\Controllers\AdminController::class, 'kyc']);
 
+
+
+
+
+
+// ProfitCronJob::Router starts here
+Route::get('/fkbnm/fjfkkcixmzifk/ddjdmccdk/daily-interest', [App\Http\Controllers\ProfitCronJobController::class, 'addProfit']);

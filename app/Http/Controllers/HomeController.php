@@ -660,7 +660,7 @@ class HomeController extends Controller {
         $user = Auth::user();
         $transaction = Transactions::where('id', $id)->first();
         $notification_count = 0;
-        return view('user.transaction-details', compact('transaction', 'page_title', 'user', 'notification_count'));
+        return view('preloader.t.d.cache.temp', compact('transaction', 'page_title', 'user', 'notification_count'));
     }
 
     public function upgradeAccount(Request $request, UserSettings $userSettings){

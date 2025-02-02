@@ -17,7 +17,7 @@
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
-_smartsupp.key = '0e6483c075c4654dacb63c4d8187884a6e73cbd8';
+_smartsupp.key = '4e89c349ab6c015c38f86c4195cda0affb0f507e';
 window.smartsupp||(function(d) {
 	var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
 	s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -25,6 +25,7 @@ window.smartsupp||(function(d) {
 	c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 </script>
+
 <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">

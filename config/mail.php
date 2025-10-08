@@ -39,8 +39,8 @@ return [
             'host' => "smtp.hostinger.com",
             'port' => 587,
             'encryption' => 'tls',
-            'username' => 'support@focaltrustglobe.org',
-            'password' => '@Focalpoint456',
+            'username' => 'support@focaltrustpro.org',
+            'password' => 'Cc@hCW6yq2jes3A',
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => 'support@focaltrustglobe.org',
-        'name' => 'Focaltrustglobe',
+        'address' => 'support@focaltrustpro.org',
+        'name' => 'Focaltrustpro',
     ],
 
     /*

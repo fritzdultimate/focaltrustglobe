@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/laravel/
+!vendor/league/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

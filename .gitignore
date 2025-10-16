@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/symfony/
+!vendor/swiftmailer/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

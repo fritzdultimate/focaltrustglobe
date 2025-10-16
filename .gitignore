@@ -4,5 +4,5 @@
 
 !vendor/asm89/
 !vendor/asm89/**
-!vendor/brick/
-!vendor/composer/
+!vendor/dflydev/
+!vendor/doctrine/

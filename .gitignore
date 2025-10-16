@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/phar-io/
+!vendor/phpoption/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

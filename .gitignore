@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/opis/
+!vendor/phar-io/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

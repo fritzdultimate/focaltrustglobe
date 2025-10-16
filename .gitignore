@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/phpunit/
+!vendor/psr/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

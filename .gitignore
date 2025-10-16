@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/graham-campbell/
+!vendor/guzzlehttp/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/guzzlehttp/
+!vendor/hamcrest/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

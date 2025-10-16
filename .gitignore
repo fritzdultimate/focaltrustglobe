@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/swiftmailer/
+!vendor/sebastian/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

@@ -4,5 +4,5 @@
 
 !vendor/asm89/
 !vendor/asm89/**
-!vendor/dflydev/
-!vendor/doctrine/
+!vendor/dragonmantank/
+!vendor/egulias/

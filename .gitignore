@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/nunomaduro/
+!vendor/opis/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/fruitcake/
+!vendor/graham-campbell/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

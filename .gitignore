@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/asm89/
+!vendor/filp/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

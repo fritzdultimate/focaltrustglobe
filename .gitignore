@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/myclabs/
+!vendor/nesbot/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

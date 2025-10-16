@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/psy/
+!vendor/ralouphie/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

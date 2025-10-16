@@ -2,7 +2,7 @@
 /.env
 /.git
 
-!vendor/mockery/
+!vendor/myclabs/
 !vendor/asm89/**
 !vendor/facade/
 !vendor/fideloper/

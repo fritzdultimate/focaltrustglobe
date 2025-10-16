@@ -4,5 +4,5 @@
 
 !vendor/asm89/
 !vendor/asm89/**
-!vendor/bin/
-!vendor/bin/**
+!vendor/brick/
+!vendor/composer/
